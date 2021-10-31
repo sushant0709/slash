@@ -1,29 +1,35 @@
 ## How Can I Contribute?
 
-  * [Reporting Bugs](#reporting-bugs)
-  * [Suggesting Enhancements](#suggesting-enhancements)
-  * [Pull Requests](#pull-requests)
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#reporting-bugs">Why should you use Research Buddy?</a></li>
+    <li><a href="#suggesting-enhancements">Suggesting Enhancements</a></li>
+    <li><a href="#pull-requests">Pull Requests</a></li>
+    <li><a href="#what-should-i-know-before-i-get-started?">What should I know before I get started</a></li>
+    <li><a href="#design-decisions">Design Decisions</a></li>
+   <li><a href="#contributors">Contributors</a></li>
+  </ol>
+</details>
 
-
-
-### Reporting Bugs
+## Reporting Bugs
 Before creating bug reports, please check the bug list(#before-submitting-a-bug-report) as you might find out that you don't need to create one. When you are creating a bug report, please include as many details as possible(#how-do-i-submit-a-good-bug-report)
 
-### Suggesting Enhancements
+## Suggesting Enhancements
 This section guides you through submitting an enhancement suggestion for Cheaper, including completely new features and minor improvements to existing functionality. 
 
-
-### Pull Request Process
+## Pull Request Process
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
 3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 
-#### Before Submitting A Bug Report
+### Before Submitting A Bug Report
 
 Please check existing bug reports instead of opening a new one. There is a possibility that there are fixes already posted for bugs. If not, you are welcome to submit a bug report and we will look into it as soon as possible.
 
-#### Git Branching Naming Convention
+### Git Branching Naming Convention
 Not using appropriate naming conventions leads to confusion and complicates the code maintenance team. We can’t ignore Git best practices in branching naming conventions.
 
 - Main (main) is the default branch available in the Git repository. It should be stable all the time and won’t allow any direct check-in. You can only merge it after code review. All team members are responsible for keeping the master stable and up-to-date.
@@ -34,7 +40,7 @@ Not using appropriate naming conventions leads to confusion and complicates the 
 E.g., moksh-7-sept-web-scraping
 
 This method allows for easy tracking of different developers’ work and progress with additional systems.
-### What should I know before I get started?
+## What should I know before I get started?
 
 1. Check the README.md
 2. Check requirements.txt
@@ -42,5 +48,13 @@ This method allows for easy tracking of different developers’ work and progres
 
 Understand the current and future scope.
 
-### Design Decisions
+## Design Decisions
 When contributing to this repository, please first discuss the change you wish to make via issue, email, or any other method with the owners of this repository before making a change.
+
+## Contributors
+
+* [Anirudh Pande](https://github.com/apande95)
+* [Bradley Erikson](https://github.com/bradley-erickson)
+* [Lalit Bangad](https://github.com/lalit10)
+* [Pratysuh Vaidya](https://github.com/Pratyush1184)
+* [Urvashi Kar](https://github.com/Urvashi74)
