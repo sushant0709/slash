@@ -3,7 +3,7 @@ from datetime import datetime
 import requests
 
 # local imports
-from formatter import formatTitle
+from src.formatter import formatTitle
 
 # configs
 WALMART = {
