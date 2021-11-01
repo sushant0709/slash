@@ -14,6 +14,7 @@ the required format.
 
 from datetime import datetime
 import math
+import html
 
 
 def formatResult(website, titles, prices, links):
@@ -65,6 +66,7 @@ def formatTitle(title):
     """
     The formatTitle function formats titles extracted from the scraped HTML code.
     """
+    title = html.unescape(title)
     if(len(title) > 40):
         return title[:40] + "..."
     return title

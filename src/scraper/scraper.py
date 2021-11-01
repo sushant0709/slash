@@ -4,7 +4,7 @@ import requests
 
 # local imports
 import formatter
-from scraper.configs import AMAZON, WALMART
+from scraper.configs import AMAZON, WALMART, scrape_target
 
 
 def httpsGet(URL):
@@ -28,10 +28,14 @@ def httpsGet(URL):
         'Connection': 'close',
         'Upgrade-Insecure-Requests': '1'
     }
-    page = requests.get(URL, headers=headers)
-    # TODO check for page status
-    soup1 = BeautifulSoup(page.content, 'html.parser')
-    return BeautifulSoup(soup1.prettify(), 'html.parser')
+    s = requests.Session()
+    page = s.get(URL, headers=headers)
+    if page.status_code == 200:
+        soup1 = BeautifulSoup(page.content, 'html.parser')
+        return BeautifulSoup(soup1.prettify(), 'html.parser')
+    else:
+        # TODO add logger
+        return None
 
 
 def search(query, config):
@@ -50,9 +54,16 @@ def search(query, config):
         List of items returned from website
     """
 
+    # create url
     query = formatter.formatSearchQuery(query)
     URL = config['url'] + query
+
+    # fetch url
     page = httpsGet(URL)
+    if not page:
+        return []
+
+    # begin parsing page content
     results = page.find_all(config['item_component'], config['item_indicator'])
     products = []
     for res in results:
@@ -89,8 +100,7 @@ def scrape(args, scrapers):
         elif scraper == 'amazon':
             local = search(query, AMAZON)
         elif scraper == 'target':
-            # TODO finish target scraper
-            local = []
+            local = scrape_target(query)
         else:
             continue
 

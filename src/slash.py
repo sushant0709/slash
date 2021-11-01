@@ -27,7 +27,7 @@ def main():
     parser.add_argument('--des', action='store_true', help="Sort in descending (non-increasing) order")
     args = parser.parse_args()
 
-    products = scrape(args, ['walmart', 'amazon'])
+    products = scrape(args, ['walmart', 'amazon', 'target'])
 
     print()
     print()
