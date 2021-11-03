@@ -78,13 +78,16 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
         itemListJson = json.dumps(itemList) 
         file.close()    
         return itemListJson
-    else:
+    elif len(itemList)>0:
+        #returning CSV
         with open('slash.csv','w', encoding='utf8', newline='') as f:
             dict_writer = csv.DictWriter(f, itemList[0].keys())
             dict_writer.writeheader()
             dict_writer.writerows(itemList)
-        return FileResponse('slash.csv',media_type='application/octet-stream',filename='slash_'+item_name+'.csv')
-
+        return FileResponse('slash.csv',media_type='application/octet-stream', filename='slash_'+item_name+'.csv')
+    else:
+        #No results
+        return None
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
 
