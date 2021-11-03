@@ -1,17 +1,6 @@
 ## 📋 Contributing to Slash !
 
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li><a href="#reporting-bugs">Reporting Bugs</a></li>
-    <li><a href="#suggesting-enhancements">Suggesting Enhancements</a></li>
-    <li><a href="#pull-requests">Pull Requests</a></li>
-    <li><a href="#what-should-i-know-before-i-get-started?">What should I know before I get started</a></li>
-    <li><a href="#design-decisions">Design Decisions</a></li>
-   <li><a href="#contributors">Contributors</a></li>
-  </ol>
-</details>
+Thank you so much for taking an interest in contributing! We are delighted when people want to contribute to Research Buddy! There are many ways to contribute to this project!
 
 ## 🤔 What should I know before I get started?
 
@@ -53,7 +42,7 @@ Enhancement suggestions are tracked as GitHub issues. Create an issue on that re
 *	Provide specific examples to demonstrate the steps. Include copy/paste able snippets which you use in those examples, as Markdown code blocks.
 *	Describe the current behavior and explain which behavior you expected to see instead and why.
 
-## 🙇 Pull Request Process
+## 🙇 Pull Requests
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
 2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
 3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
