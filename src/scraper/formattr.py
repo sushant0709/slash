@@ -37,6 +37,8 @@ def formatResult(website, titles, prices, links):
         "link":f'www.{website}.com{link}',
         "website": website,
     }
+    if website == 'costco':
+        product['link'] = f'{link}'
     return product
 
 
@@ -61,6 +63,18 @@ def formatSearchQuery(query):
     """
     return query.replace(" ", "+")
 
+def formatSearchQueryForCostco(query):
+    """
+    The formatSearchQueryForCostco function formats the search string into a string that 
+    can be sent as a url paramenter.
+    """
+    queryStrings = query.split(' ')
+    formattedQuery = ""
+    for str in queryStrings:
+        formattedQuery += str
+        formattedQuery += '+'
+    formattedQuery = formattedQuery[:-1]
+    return formattedQuery        
 
 def formatTitle(title):
     """
