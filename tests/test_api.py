@@ -13,15 +13,15 @@ headers = {
 
 class TestAPI(unittest.TestCase):
     def test_server(self):
-        self.assertEqual(requests.get("http://localhost:8822/", headers=headers).status_code, 200, "Server is not up and running")
+        self.assertEqual(requests.get("https://slash-app.azurewebsites.net/", headers=headers).status_code, 200, "Server is not up and running")
 
     def test_amazon(self):
         searchTerm = "dell laptops"
-        self.assertEqual(len(json.loads(requests.get("http://localhost:8822/az/" + searchTerm, headers = headers).text))>0, True, "Didn't get any responses from the API")
+        self.assertEqual(len(json.loads(requests.get("https://slash-app.azurewebsites.net/az/" + searchTerm, headers = headers).text))>0, True, "Didn't get any responses from the API")
 
     def test_walmart(self):
         searchTerm = "ps4"
-        self.assertEqual(len(json.loads(requests.get("http://localhost:8822/wm/" + searchTerm, headers = headers).text))>0, True, "Didn't get any responses from the API")
+        self.assertEqual(len(json.loads(requests.get("https://slash-app.azurewebsites.net/wm/" + searchTerm, headers = headers).text))>0, True, "Didn't get any responses from the API")
 
 if __name__ == '__main__':
     unittest.main()
