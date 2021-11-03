@@ -4,8 +4,7 @@ import requests
 
 # local imports
 import scraper.formattr as form
-from scraper.configs import AMAZON, WALMART, COSTCO, scrape_ebay, scrape_target
-
+from scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
 
 def httpsGet(URL):
     """makes HTTP called to the requested URL with custom headers
@@ -112,6 +111,8 @@ def scrape(args, scrapers):
             local = scrape_ebay(query)
         elif scraper == 'costco':
             local = search(query, COSTCO)
+        elif scraper == 'bestbuy':
+            local = search(query, BESTBUY)
         else:
             continue
         # TBD : move number of items fetched to global level ?

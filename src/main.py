@@ -66,6 +66,8 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
         scrapers.append('target')
     if site == 'cc' or site == 'all':
         scrapers.append('costco')
+    if site == 'bb' or site == 'all':
+        scrapers.append('bestbuy')
     #calling scraper.scrape to fetch results
     itemList =  scr.scrape(args = args, scrapers= scrapers)
  
