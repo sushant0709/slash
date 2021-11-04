@@ -4,9 +4,9 @@ Thank you so much for taking an interest in contributing! We are delighted when 
 
 ## 🤔 What should I know before I get started?
 
-1. Check the README.md
-2. Check requirements.txt
-3. Check setup.py
+1. Check [README.md](https://github.com/Urvashi74/slash/blob/main/README.md)
+2. Check [requirements.txt](https://github.com/Urvashi74/slash/blob/main/requirements.txt)
+3. Check [setup.py](https://github.com/Urvashi74/slash/blob/main/setup.py)
 
 Understand the current and future scope.
 
@@ -44,8 +44,8 @@ Enhancement suggestions are tracked as GitHub issues. Create an issue on that re
 
 ## 🙇 Pull Requests
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the README.md with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the README.md to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
+2. Update the [README.md](https://github.com/Urvashi74/slash/blob/main/README.md) with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
+3. Increase the version numbers in any examples files and the [README.md](https://github.com/Urvashi74/slash/blob/main/README.md) to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 
 ## 👒 Styleguides
