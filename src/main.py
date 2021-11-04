@@ -1,6 +1,5 @@
 # package imports
 import uvicorn
-from os import scandir
 from typing import Optional
 from typing import List
 from fastapi import FastAPI
@@ -10,18 +9,20 @@ from pydantic import BaseModel
 import csv
 
 # local imports
-import scraper.scraper as scr
-from scraper.configs import AMAZON, WALMART
+import src.scraper.scraper as scr
 
-#response type define
+
+# response type define
 class jsonScraps(BaseModel):
     timestamp: str
     title: str
-    price : str
-    website : str
+    price: str
+    website: str
     link: str
 
+
 app = FastAPI()
+
 
 @app.get("/")
 async def read_root():
@@ -38,8 +39,17 @@ async def read_root():
     response = RedirectResponse(url='/redoc')
     return response
 
-@app.get("/{site}/{item_name}",response_model=List[jsonScraps])
-async def search_items_API(site : str,item_name: str, relevant: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, listLengthInd: Optional[int] = 10, export: Optional[bool] = False): 
+
+@app.get("/{site}/{item_name}", response_model=List[jsonScraps])
+async def search_items_API(
+    site: str,
+    item_name: str,
+    relevant: Optional[str] = None,
+    order_by_col: Optional[str] = None,
+    reverse: Optional[bool] = False,
+    listLengthInd: Optional[int] = 10,
+    export: Optional[bool] = False
+):
     '''Wrapper API to fetch AMAZON, WALMART and TARGET query results
 
     Parameters
@@ -51,20 +61,19 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
     itemListJson: JSON List
         list of search results as JSON List
     '''
-    #logging in file
+    # logging in file
     file = open("logger.txt", "a")
     file.write('amazon query:' + str(item_name)+'\n')
-    
-    #building argument 
+
+    # building argument
     args = {
-    'search': item_name,
-    'sort' : 'pr' if order_by_col == 'price' else 'pr', # placeholder TDB
-    'des' : reverse, # placeholder TBD
-    'num' : listLengthInd,
-    'relevant' : relevant
+        'search': item_name,
+        'sort': 'pr' if order_by_col == 'price' else 'pr',  # placeholder TDB
+        'des': reverse,  # placeholder TBD
+        'num': listLengthInd,
+        'relevant': relevant
     }
 
-    print(args)
     scrapers = []
 
     if site == 'az' or site == 'all':
@@ -77,28 +86,26 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
         scrapers.append('costco')
     if site == 'bb' or site == 'all':
         scrapers.append('bestbuy')
+    if site == 'eb' or site == 'all':
+        scrapers.append('ebay')
 
-    #calling scraper.scrape to fetch results
-    itemList =  scr.scrape(args = args, scrapers= scrapers)
+    # calling scraper.scrape to fetch results
+    itemList = scr.scrape(args=args, scrapers=scrapers)
 
-    if not export and len(itemList)>0:
-        file.close()    
+    if not export and len(itemList) > 0:
+        file.close()
         return itemList
-    elif len(itemList)>0:
-        #returning CSV
-        with open('slash.csv','w', encoding='utf8', newline='') as f:
+    elif len(itemList) > 0:
+        # returning CSV
+        with open('slash.csv', 'w', encoding='utf8', newline='') as f:
             dict_writer = csv.DictWriter(f, itemList[0].keys())
             dict_writer.writeheader()
             dict_writer.writerows(itemList)
-        return FileResponse('slash.csv',media_type='application/octet-stream', filename='slash_'+item_name+'.csv')
+        return FileResponse('slash.csv', media_type='application/octet-stream', filename='slash_'+item_name+'.csv')
     else:
-        #No results
+        # No results
         return None
+
+
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
-
-
-
-
-
-

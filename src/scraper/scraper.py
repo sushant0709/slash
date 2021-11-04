@@ -3,8 +3,9 @@ from bs4 import BeautifulSoup
 import requests
 
 # local imports
-import scraper.formattr as form
-from scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
+import src.scraper.formattr as form
+from src.scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
+
 
 def httpsGet(URL):
     """makes HTTP called to the requested URL with custom headers
@@ -53,7 +54,7 @@ def search(query, config):
     products: list
         List of items returned from website
     """
-    if config['site']=='costco':
+    if config['site'] == 'costco':
         query = form.formatSearchQueryForCostco(query)
     else:
         query = form.formatSearchQuery(query)
@@ -84,7 +85,7 @@ def scrape(args, scrapers):
     args: dict
         Dictionary of arguments used for scraping
 
-        search : str [website to search on]
+        search : str [query to search on]
         sort : str [sort by column name ; pr - price]
         des : boolean [True for reverse, False for asc]
         num : number of rows in the output
@@ -117,7 +118,7 @@ def scrape(args, scrapers):
             continue
         # TBD : move number of items fetched to global level ?
         for sort_by in args['sort']:
-            local = form.sortList(local, sort_by, args['des'])[:args.get('num',len(local))]
+            local = form.sortList(local, sort_by, args['des'])[:args.get('num', len(local))]
         overall.extend(local)
 
     for sort_by in args['sort']:

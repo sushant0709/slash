@@ -4,7 +4,7 @@ import requests
 from ebaysdk.finding import Connection
 
 # local imports
-from scraper.formattr import formatTitle
+from src.scraper.formattr import formatTitle
 
 # configs
 WALMART = {
@@ -54,6 +54,7 @@ BESTBUY = {
     'price_indicator': 'div.priceView-customer-price span',
     'link_indicator': 'a.image-link',
 }
+
 
 # individual scrapers
 def scrape_target(query):
@@ -134,10 +135,12 @@ def scrape_ebay(query):
             'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
             'title': formatTitle(p['title']),
             'price': '$' + p['sellingStatus']['currentPrice']['value'],
-            'website': 'ebay'
+            'website': 'ebay',
+            'link': p['viewItemURL']
         }
         items.append(item)
 
     return items
+
 
 CONFIGS = [WALMART, AMAZON, COSTCO, BESTBUY]
