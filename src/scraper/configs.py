@@ -4,7 +4,7 @@ import requests
 from ebaysdk.finding import Connection
 
 # local imports
-from src.formatter import formatTitle
+from scraper.formattr import formatTitle
 
 # configs
 WALMART = {
