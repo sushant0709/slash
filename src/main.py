@@ -38,7 +38,7 @@ async def read_root():
     return response
 
 @app.get("/{site}/{item_name}",response_model=List[jsonScraps])
-async def search_items_API(site : str,item_name: str, relevant: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, listLengthInd: Optional[int] = 1, export: Optional[bool] = False): 
+async def search_items_API(site : str,item_name: str, relevant: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, listLengthInd: Optional[int] = 10, export: Optional[bool] = False): 
     '''Wrapper API to fetch AMAZON, WALMART and TARGET query results
 
     Parameters
@@ -79,10 +79,8 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
 
     #calling scraper.scrape to fetch results
     itemList =  scr.scrape(args = args, scrapers= scrapers)
-    print(itemList)
-    print(type(itemList),type(itemList[0]))
-    
-    if not export:
+
+    if not export and len(itemList)>0:
         file.close()    
         return itemList
     elif len(itemList)>0:
