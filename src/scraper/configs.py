@@ -1,6 +1,7 @@
 # package imports
 from datetime import datetime
 import requests
+from ebaysdk.finding import Connection
 
 # local imports
 from src.formatter import formatTitle
@@ -73,6 +74,44 @@ def scrape_target(query):
             'title': formatTitle(p['item']['product_description']['title']),
             'price': '$' + str(p['price']['current_retail']),
             'website': 'target'
+        }
+        items.append(item)
+
+    return items
+
+
+def scrape_ebay(query):
+    """Scrape Target's api for data
+
+    Parameters
+    ----------
+    query: str
+        Item to look for in the api
+
+    Returns
+    ----------
+    items: list
+        List of items from the dict
+    """
+
+    EBAY_APP = 'BradleyE-slash-PRD-2ddd2999f-2ae39cfa'
+
+    try:
+        api = Connection(appid=EBAY_APP, config_file=None, siteid='EBAY-US')
+        response = api.execute('findItemsByKeywords', {'keywords': query})
+    except ConnectionError as e:
+        print(e)
+        return []
+
+    data = response.dict()
+
+    items = []
+    for p in data['searchResult']['item']:
+        item = {
+            'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+            'title': formatTitle(p['title']),
+            'price': '$' + p['sellingStatus']['currentPrice']['value'],
+            'website': 'ebay'
         }
         items.append(item)
 
