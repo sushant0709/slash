@@ -73,6 +73,31 @@ python main.py
 * ***Students***: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
 * ***Data Analysts***: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
+
+:thought_balloon: API
+---
+## Documentation
+
+Documentation can be accessed anytime via the below link.
+ 
+	 `https://slash-app-staging.azurewebsites.net/`
+
+## Search Items Api
+
+Wrapper API to fetch slash scrape results. This API provides a one step solution to access scrape results from all our integrated websites.
+
+    https://slash-app-staging.azurewebsites.net/{site}/{item_name}
+
+**Required parameters:**
+
+ - **site**: *az* for amazon; *wm* for walmart; *eb* for ebay; *cc* for costco; *tg* for target and *bb* for bustbuy. Alternatively '*all*' in site can be used to get results for all sites.
+    
+ - **item_name**: items to be searched by slash web api; *examples below*
+
+`https://slash-app-staging.azurewebsites.net/az/toys`
+
+`https://slash-app-staging.azurewebsites.net/all/dell`
+
 :page_facing_up: Why
 ---
 - In a market where we are spoilt for choices, we often look for the best deals.  
