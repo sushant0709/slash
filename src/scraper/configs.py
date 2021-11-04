@@ -128,7 +128,6 @@ def scrape_ebay(query):
         return []
 
     data = response.dict()
-    print(data)
 
     items = []
     for p in data['searchResult']['item']:
@@ -136,7 +135,8 @@ def scrape_ebay(query):
             'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
             'title': formatTitle(p['title']),
             'price': '$' + p['sellingStatus']['currentPrice']['value'],
-            'website': 'ebay'
+            'website': 'ebay',
+            'link': p['viewItemURL']
         }
         items.append(item)
 
