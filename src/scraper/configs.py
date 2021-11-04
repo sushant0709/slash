@@ -4,7 +4,7 @@ import requests
 from ebaysdk.finding import Connection
 
 # local imports
-from src.formatter import formatTitle
+from scraper.formattr import formatTitle
 
 # configs
 WALMART = {
@@ -31,6 +31,29 @@ AMAZON = {
     'link_indicator': 'h2 a.a-link-normal'
 }
 
+COSTCO = {
+    'site': 'costco',
+    'url': 'https://www.costco.com/CatalogSearch?dept=All&keyword=',
+    'item_component': 'div',
+    'item_indicator': {
+        'class': 'product-tile-set'
+    },
+    'title_indicator': 'span a',
+    'price_indicator': 'div.price',
+    'link_indicator': 'span.description a',
+}
+
+BESTBUY = {
+    'site': 'bestbuy',
+    'url': 'https://www.bestbuy.com/site/searchpage.jsp?st=',
+    'item_component': 'li',
+    'item_indicator': {
+        'class': 'sku-item'
+    },
+    'title_indicator': 'h4.sku-header a',
+    'price_indicator': 'div.priceView-customer-price span',
+    'link_indicator': 'a.image-link',
+}
 
 # individual scrapers
 def scrape_target(query):
@@ -116,3 +139,5 @@ def scrape_ebay(query):
         items.append(item)
 
     return items
+
+CONFIGS = [WALMART, AMAZON, COSTCO, BESTBUY]

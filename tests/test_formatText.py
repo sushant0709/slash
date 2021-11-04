@@ -7,7 +7,13 @@ this file. If not, please write to: secheaper@gmail.com
 
 """
 
-import formatter
+import os
+import sys
+import inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0, parentdir)
+import src.scraper.formattr as formatter
 
 def test_formatSearchQuery():
     """

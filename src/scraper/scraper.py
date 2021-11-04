@@ -3,9 +3,8 @@ from bs4 import BeautifulSoup
 import requests
 
 # local imports
-import src.formatter as formatter
-from src.scraper.configs import AMAZON, WALMART, scrape_ebay, scrape_target
-
+import scraper.formattr as form
+from scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
 
 def httpsGet(URL):
     """makes HTTP called to the requested URL with custom headers
@@ -25,8 +24,9 @@ def httpsGet(URL):
         'Accept-Encoding': 'gzip, deflate',
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
         'DNT': '1',
-        'Connection': 'close',
-        'Upgrade-Insecure-Requests': '1'
+        'Connection': 'keep-alive',
+        'Upgrade-Insecure-Requests': '1',
+        'Cache-Control': 'no-cache'
     }
     s = requests.Session()
     page = s.get(URL, headers=headers)
@@ -53,9 +53,10 @@ def search(query, config):
     products: list
         List of items returned from website
     """
-
-    # create url
-    query = formatter.formatSearchQuery(query)
+    if config['site']=='costco':
+        query = form.formatSearchQueryForCostco(query)
+    else:
+        query = form.formatSearchQuery(query)
     URL = config['url'] + query
 
     # fetch url
@@ -70,7 +71,7 @@ def search(query, config):
         title = res.select(config['title_indicator'])
         price = res.select(config['price_indicator'])
         link = res.select(config['link_indicator'])
-        product = formatter.formatResult(config['site'], title, price, link)
+        product = form.formatResult(config['site'], title, price, link)
         products.append(product)
     return products
 
@@ -82,6 +83,11 @@ def scrape(args, scrapers):
     ----------
     args: dict
         Dictionary of arguments used for scraping
+
+        search : str [website to search on]
+        sort : str [sort by column name ; pr - price]
+        des : boolean [True for reverse, False for asc]
+        num : number of rows in the output
     scrapers: list
         List of scrapers to use
 
@@ -91,7 +97,7 @@ def scrape(args, scrapers):
         List of items returned from scrapers
     """
 
-    query = args.search
+    query = args['search']
 
     overall = []
     for scraper in scrapers:
@@ -103,14 +109,18 @@ def scrape(args, scrapers):
             local = scrape_target(query)
         elif scraper == 'ebay':
             local = scrape_ebay(query)
+        elif scraper == 'costco':
+            local = search(query, COSTCO)
+        elif scraper == 'bestbuy':
+            local = search(query, BESTBUY)
         else:
             continue
-
-        for sort_by in args.sort:
-            local = formatter.sortList(local, sort_by, args.des)[:args.num]
+        # TBD : move number of items fetched to global level ?
+        for sort_by in args['sort']:
+            local = form.sortList(local, sort_by, args['des'])[:args.get('num',len(local))]
         overall.extend(local)
 
-    for sort_by in args.sort:
-        overall = formatter.sortList(overall, sort_by, args.des)
+    for sort_by in args['sort']:
+        overall = form.sortList(overall, sort_by, args['des'])
 
     return overall
