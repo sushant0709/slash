@@ -49,15 +49,15 @@ cd slash
 ```
 pip3 install -r requirements.txt
 ```
-4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the python command to run the ```slash.py``` file.
+4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the python command to run the ```main.py``` file.
 ```
 cd src
 
 For Mac
-python3 slash.py --search socks
+python3 main.py
 
 For Windows
-python slash.py --search socks
+python main.py
 ```
 
 :thought_balloon: Technology Used
