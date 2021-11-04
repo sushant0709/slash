@@ -75,7 +75,7 @@ These Contributing guidelines are adapted from the [Atom's](https://github.com/a
 ## 💻 Contributors
 
 * [Anirudh Pande](https://github.com/apande95)
-* [Bradley Erikson](https://github.com/bradley-erickson)
+* [Bradley Erickson](https://github.com/bradley-erickson)
 * [Lalit Bangad](https://github.com/lalit10)
 * [Pratyush Vaidya](https://github.com/Pratyush1184)
 * [Urvashi Kar](https://github.com/Urvashi74)
