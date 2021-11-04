@@ -1,6 +1,6 @@
 ## 📋 Contributing to Slash !
 
-Thank you so much for taking an interest in contributing! We are delighted when people want to contribute to Research Buddy! There are many ways to contribute to this project!
+Thank you so much for taking an interest in contributing! We are delighted when people want to contribute to Slash! There are many ways to contribute to this project!
 
 ## 🤔 What should I know before I get started?
 
@@ -77,5 +77,5 @@ These Contributing guidelines are adapted from the [Atom's](https://github.com/a
 * [Anirudh Pande](https://github.com/apande95)
 * [Bradley Erikson](https://github.com/bradley-erickson)
 * [Lalit Bangad](https://github.com/lalit10)
-* [Pratysuh Vaidya](https://github.com/Pratyush1184)
+* [Pratyush Vaidya](https://github.com/Pratyush1184)
 * [Urvashi Kar](https://github.com/Urvashi74)
