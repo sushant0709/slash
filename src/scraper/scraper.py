@@ -3,8 +3,8 @@ from bs4 import BeautifulSoup
 import requests
 
 # local imports
-import src.scraper.formattr as form
-from src.scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
+import scraper.formattr as form
+from scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
 
 
 def httpsGet(URL):

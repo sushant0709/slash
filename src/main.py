@@ -9,7 +9,7 @@ from pydantic import BaseModel
 import csv
 
 # local imports
-import src.scraper.scraper as scr
+import scraper.scraper as scr
 
 
 # response type define
@@ -18,7 +18,7 @@ class jsonScraps(BaseModel):
     title: str
     price: str
     website: str
-    link: str
+    link: Optional[str] = None
 
 
 app = FastAPI()
