@@ -2,17 +2,23 @@
 import uvicorn
 from os import scandir
 from typing import Optional
+from typing import List
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse
 from fastapi.responses import FileResponse
-import json 
+from pydantic import BaseModel
 import csv
-import logging
 
 # local imports
 import scraper.scraper as scr
 from scraper.configs import AMAZON, WALMART
 
+#response type define
+class jsonScraps(BaseModel):
+    timestamp: str
+    title: str
+    price : str
+    website : str
 
 app = FastAPI()
 
@@ -31,8 +37,8 @@ async def read_root():
     response = RedirectResponse(url='/redoc')
     return response
 
-@app.get("/{site}/{item_name}")
-async def search_items_API(site : str,item_name: str, relevant: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, listLengthInd: Optional[int] = 10, export: Optional[bool] = False): 
+@app.get("/{site}/{item_name}",response_model=List[jsonScraps])
+async def search_items_API(site : str,item_name: str, relevant: Optional[str] = None, order_by_col: Optional[str] = None, reverse: Optional[bool] = False, listLengthInd: Optional[int] = 1, export: Optional[bool] = False): 
     '''Wrapper API to fetch AMAZON, WALMART and TARGET query results
 
     Parameters
@@ -70,14 +76,15 @@ async def search_items_API(site : str,item_name: str, relevant: Optional[str] = 
         scrapers.append('costco')
     if site == 'bb' or site == 'all':
         scrapers.append('bestbuy')
+
     #calling scraper.scrape to fetch results
     itemList =  scr.scrape(args = args, scrapers= scrapers)
- 
+    print(itemList)
+    print(type(itemList),type(itemList[0]))
+    
     if not export:
-        #returning JSON list
-        itemListJson = json.dumps(itemList) 
         file.close()    
-        return itemListJson
+        return itemList
     elif len(itemList)>0:
         #returning CSV
         with open('slash.csv','w', encoding='utf8', newline='') as f:
