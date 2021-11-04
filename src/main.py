@@ -74,7 +74,6 @@ async def search_items_API(
         'relevant': relevant
     }
 
-    print(args)
     scrapers = []
 
     if site == 'az' or site == 'all':
