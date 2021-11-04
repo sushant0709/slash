@@ -6,20 +6,19 @@ You should have received a copy of the MIT license with
 this file. If not, please write to: secheaper@gmail.com
 
 """
-
-"""
-The formatter module focuses on processing raw text and returning it in 
-the required format.
-"""
-
 from datetime import datetime
 import math
 import html
 
+"""
+The formatter module focuses on processing raw text and returning it in
+the required format.
+"""
+
 
 def formatResult(website, titles, prices, links):
     """
-    The formatResult function takes the scraped HTML as input, and extracts the 
+    The formatResult function takes the scraped HTML as input, and extracts the
     necessary values from the HTML code. Ex. extracting a price '$19.99' from
     a paragraph tag.
     """
@@ -34,7 +33,7 @@ def formatResult(website, titles, prices, links):
         'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
         "title": formatTitle(title),
         "price": price,
-        "link":f'www.{website}.com{link}',
+        "link": f'www.{website}.com{link}',
         "website": website,
     }
     if website == 'costco':
@@ -58,14 +57,15 @@ def sortList(arr, sortBy, reverse):
 
 def formatSearchQuery(query):
     """
-    The formatSearchQuery function formats the search string into a string that 
+    The formatSearchQuery function formats the search string into a string that
     can be sent as a url paramenter.
     """
     return query.replace(" ", "+")
 
+
 def formatSearchQueryForCostco(query):
     """
-    The formatSearchQueryForCostco function formats the search string into a string that 
+    The formatSearchQueryForCostco function formats the search string into a string that
     can be sent as a url paramenter.
     """
     queryStrings = query.split(' ')
@@ -74,7 +74,8 @@ def formatSearchQueryForCostco(query):
         formattedQuery += str
         formattedQuery += '+'
     formattedQuery = formattedQuery[:-1]
-    return formattedQuery        
+    return formattedQuery
+
 
 def formatTitle(title):
     """
@@ -97,6 +98,6 @@ def getNumbers(st):
             ans += ch
     try:
         ans = float(ans)
-    except:
+    except:  # noqa: E722
         ans = math.inf
     return ans

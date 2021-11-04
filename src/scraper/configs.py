@@ -4,7 +4,7 @@ import requests
 from ebaysdk.finding import Connection
 
 # local imports
-from scraper.formattr import formatTitle
+from src.scraper.formattr import formatTitle
 
 # configs
 WALMART = {
@@ -54,6 +54,7 @@ BESTBUY = {
     'price_indicator': 'div.priceView-customer-price span',
     'link_indicator': 'a.image-link',
 }
+
 
 # individual scrapers
 def scrape_target(query):
@@ -127,6 +128,7 @@ def scrape_ebay(query):
         return []
 
     data = response.dict()
+    print(data)
 
     items = []
     for p in data['searchResult']['item']:
@@ -139,5 +141,6 @@ def scrape_ebay(query):
         items.append(item)
 
     return items
+
 
 CONFIGS = [WALMART, AMAZON, COSTCO, BESTBUY]
