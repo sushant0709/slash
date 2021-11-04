@@ -19,6 +19,7 @@ class jsonScraps(BaseModel):
     title: str
     price : str
     website : str
+    link: str
 
 app = FastAPI()
 
