@@ -14,6 +14,9 @@ Slash is a command line tool that scrapes the most popular e-commerce websites t
 - **Easy**: Slash uses very easy commands to filter, sort and search your items
 - **Powerful**: Quickly alter the commands to get desired results
 
+
+
+
 <p align="center">
   <a href="#rocket-installation">Installation</a>
   ::
@@ -181,7 +184,7 @@ python slash.py --search "philips hue" --num 5
 ---
 
 * [Anirudh Pande](https://github.com/apande95)
-* [Bradley Erikson](https://github.com/bradley-erickson)
+* [Bradley Erickson](https://github.com/bradley-erickson)
 * [Lalit Bangad](https://github.com/lalit10)
 * [Pratyush Vaidya](https://github.com/Pratyush1184)
 * [Urvashi Kar](https://github.com/Urvashi74)
