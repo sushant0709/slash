@@ -62,7 +62,10 @@ python main.py
 
 :thought_balloon: Technology Used
 ---
-
+- FastAPI : https://fastapi.tiangolo.com
+- ASGI Server - Uvicorn : https://www.uvicorn.org
+- Docker : https://www.docker.com
+- Azure : https://azure.microsoft.com/en-us/
 
 
 :thought_balloon: Use Case
