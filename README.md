@@ -82,7 +82,7 @@ python slash.py --search socks
 
 :golf: Future Roadmap
 ---
-- Our API can be used by end users such as developers who are tech Savvy individuals looking to get a one stop solution for web scraping such ecommerce websites, as well as API access to mutiple Ecommerce websites. It'll be available directly for access to people without having to dive deep into the code.
+- Our API can be used by end users such as developers who are tech-savvy individuals looking to get a one stop solution for web scraping such ecommerce websites, as well as API access to mutiple Ecommerce websites. It'll be available directly for access to people without having to dive deep into the code.
 - Front End implementation of Slash API
 - Chrome Extension using the functionalities of Slash API
 - An iOS app or Android application
