@@ -2,7 +2,7 @@
 
 ![GitHub](https://img.shields.io/github/license/Urvashi74/slash)
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4003809.svg)](https://doi.org/10.5281/zenodo.4003809)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5646505.svg)](https://doi.org/10.5281/zenodo.5646505)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Urvashi74/slash)
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/Urvashi74/slash)
