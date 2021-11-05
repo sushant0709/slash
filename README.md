@@ -9,7 +9,11 @@
 ![Github pull requests](https://img.shields.io/github/issues-pr/Urvashi74/slash)
 ![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Urvashi74/slash)
 
-Slash is a publicly accessible web API framework that allows one to scrape the most popular e-commerce websites to get the best deals on the searched items across multiple e-commerce websites. Currently supported websites include amazon.com, walmart.com, target.com, bestbuy.com, costco.com and ebay.com.
+Do you love shopping? Are you in search of some good deals while shopping online?! Slash is here to help you look for the best deals!
+
+https://media.giphy.com/media/WxIPB9chJXY6QKbJci/giphy.gif
+
+Slash is a publicly accessible web API framework that allows one to scrape the most popular e-commerce websites to get the best deals on the searched items across multiple e-commerce websites. Currently supported websites include [Amazon](https://www.amazon.com/), [Walmart](https://www.walmart.com/), [Target](https://www.target.com/), [BestBuy](https://www.bestbuy.com/), [Costco](https://www.costco.com/) and [EBay](https://www.ebay.com/).
 - **Fast**: With slash, you can save over 50% of your time by comparing deals across websites within seconds
 - **Easy**: Slash introduces easy to use public APIs to filter, sort and search through the search results
 - **Powerful**: Produces JSON responses that can be easily customised to bring about the desired output
