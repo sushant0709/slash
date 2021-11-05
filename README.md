@@ -43,7 +43,10 @@ Slash was envisioned as a console application in Phase-I which was meant to be u
 
 ---
 
-<p align="center"><img width="700" src="./assets/demo.gif"></p>
+:movie_camera: Checkout our video!
+---
+
+https://user-images.githubusercontent.com/25104264/140454029-315ceada-ffe1-434a-bad6-3c1f389a7795.mp4
 
 ---
 
@@ -69,7 +72,7 @@ For Windows
 python main.py
 ```
 
-:thought_balloon: Technology Used
+:computer: Technology Used
 ---
 - FastAPI : https://fastapi.tiangolo.com
 - ASGI Server - Uvicorn : https://www.uvicorn.org
@@ -77,13 +80,13 @@ python main.py
 - Azure : https://azure.microsoft.com/en-us/
 
 
-:thought_balloon: Use Case
+:bulb: Use Case
 ---
 * ***Students***: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
 * ***Data Analysts***: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
 
-:thought_balloon: API
+:file_cabinet: API
 ---
 ## Documentation
 
