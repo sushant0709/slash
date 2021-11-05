@@ -9,14 +9,23 @@
 ![Github pull requests](https://img.shields.io/github/issues-pr/Urvashi74/slash)
 ![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Urvashi74/slash)
 
-Slash is a command line tool that scrapes the most popular e-commerce websites to get the best deals on the searched items across these websites. 
+Slash is a publicly accessible web API framework that allows one to scrape the most popular e-commerce websites to get the best deals on the searched items across multiple e-commerce websites. Currently supported websites include amazon.com, walmart.com, target.com, bestbuy.com, costco.com and ebay.com.
 - **Fast**: With slash, you can save over 50% of your time by comparing deals across websites within seconds
-- **Easy**: Slash uses very easy commands to filter, sort and search your items
-- **Powerful**: Quickly alter the commands to get desired results
+- **Easy**: Slash introduces easy to use public APIs to filter, sort and search through the search results
+- **Powerful**: Produces JSON responses that can be easily customised to bring about the desired output
 
+---
 
+:rocket: Improvements over Phase-I
+---
 
-
+Slash was envisioned as a console application in Phase-I which was meant to be used as a standalone native Python desktop application. Even though a native application is good in usecases such as heavy processing and zero downtime but in the bigger picture, it fades in comparison to an online web application. Our efforts in phase-II were to convert a native desktop Python application to a web application(APIs) and expand the horizon by bringing in more e-commerce websites support as well as support for API calls to sites that don't support scraping. Our vision is to provide a one-stop abstraction for all web scraping needs which is packaged in a sleek and easy to implement cloud pipeline. Integrating CI/CD to our API was crucial to our goal as we believe the next phase should not dwell in the past but rather focus on the future. Below is the breakdown of step by step improvement and our reasoning behind the same:
+1) Web Scraper Extension: Added additional websites to the scraper logic. Even though the earlier scraper was targeting popular sites like Amazon and Walmart, we all know that the more the merrier. So, we integrated Target, CostCo, eBay and BestBuy to our scraper logic which enabled us to provide more options to the users.
+2) Web APIs: We created a web API to access internal scraper logic in a streamlined manner. Using a single path, all the different e-commerce sites can be scraped and results can be obtained. We believe that creating an API for scraper code was the next logical step for expanding the usecase of our application.
+3) Export functionality: Using the same link to access our scraper web API and sending the optional parameter export=True, generates a csv file of our results. This file can directly be worked upon by other applications or can be used to drive the business logic.
+4) Uvicorn Server: We used a lightweight ASGI(Asynchronous Server Gateway Interface) server called the Uvicorn server. This server enables us to quickly host the fastAPI APIs in a quick and seamless way.
+5) Cloud: Our next step involved the conversion from a local web application to a cloud application to ensure no downtime and complete availability. We employed the following steps to create a cloud enabled CI/CD. Docker was used as a container to run our uvicorn server. We then deployed Dockerised services on Azure.
+---
 <p align="center">
   <a href="#rocket-installation">Installation</a>
   ::
@@ -98,6 +107,16 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 
 `https://slash-app-staging.azurewebsites.net/all/dell`
 
+**Optional parameters**
+
+- **relevant**: string relevance: items will be ordered by relevance. Not supported currently.
+- **order_by_col**: string column_name: items will be ordered by the column name. Currently only the 'price' column ordering is supported.
+- **reverse**: boolean val: items will be displayed in the same or the opposite order based on the value of this parameter.
+- **listLengthInd**: integer len(default value is 10): sets the upper limit on the number of entries that will be displayed
+- **export**: boolean val(default value is false): items can be exported in a csv file;; *examples below*
+
+`https://slash-app-staging.azurewebsites.net/all/dell?export=false&listLengthInd=5&order_by_col=price&reverse=false`
+
 :page_facing_up: Why
 ---
 - In a market where we are spoilt for choices, we often look for the best deals.  
@@ -105,8 +124,8 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 - The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
 - E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
 - This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
-- Slash in its current form is for people who have some understanding of python and are comfortable in using the command line interface to interact with systems.
-- Future updates aim to encompass a wide variety of users irrespective of their computer knowledge and background.
+- Slash in its current form is for students who wish to get the best deals out of every e-commerce site and can be used by anyone who is willing to develop an application that consumes these web APIs.
+- Future scope includes anything from a web application with a frontend or any Android or IOS application that utilises these Web APIs at their backend. Anyone can build their own custom application on top of these web APIs.
 
 :golf: Future Roadmap
 ---
