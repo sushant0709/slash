@@ -27,23 +27,29 @@ Slash was envisioned as a console application in Phase-I which was meant to be u
 5) Cloud: Our next step involved the conversion from a local web application to a cloud application to ensure no downtime and complete availability. We employed the following steps to create a cloud enabled CI/CD. Docker was used as a container to run our uvicorn server. We then deployed Dockerised services on Azure.
 ---
 <p align="center">
+  <a href="#movie_camera-checkout-our-video">Checkout our video</a>
+  ::
   <a href="#rocket-installation">Installation</a>
   ::
-  <a href="#thought_balloon-use-case">Use Case</a>
+  <a href="#computer-technology-used">Technology Used</a>
+  ::
+  <a href="#bulb-use-case">Use Case</a>
+  ::
+  <a href="#file_cabinet-api">API</a>
   ::
   <a href="#page_facing_up-why">Why</a>
   ::
   <a href="#golf-future-roadmap">Future Roadmap</a>
   ::
   <a href="#sparkles-contributors">Contributors</a>
-    ::
+  ::
   <a href="#email-support">Support</a>
   
 </p>
 
 ---
 
-:movie_camera: Checkout our video!
+:movie_camera: Checkout our video
 ---
 
 https://user-images.githubusercontent.com/25104264/140454029-315ceada-ffe1-434a-bad6-3c1f389a7795.mp4
