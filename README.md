@@ -27,7 +27,7 @@ Slash was envisioned as a console application in Phase-I which was meant to be u
 2) Web APIs: We created a web API to access internal scraper logic in a streamlined manner. Using a single path, all the different e-commerce sites can be scraped and results can be obtained. We believe that creating an API for scraper code was the next logical step for expanding the usecase of our application.
 3) Export functionality: Using the same link to access our scraper web API and sending the optional parameter export=True, generates a csv file of our results. This file can directly be worked upon by other applications or can be used to drive the business logic.
 4) Uvicorn Server: We used a lightweight ASGI(Asynchronous Server Gateway Interface) server called the Uvicorn server. This server enables us to quickly host the fastAPI APIs in a quick and seamless way.
-5) Cloud: Our next step involved the conversion from a local web application to a cloud application to ensure no downtime and complete availability. We employed the following steps to create a cloud enabled CI/CD. Docker was used as a container to run our uvicorn server. We then deployed Dockerised services on Azure.
+5) Cloud: Our next step involved the conversion from a local web application to a cloud application to ensure no downtime and complete availability. We deployed the API onto cloud (Microsoft Azure) and enabled CI/CD using Github Actions. Docker was used as a container to run our uvicorn server. We then deployed Dockerised services on Azure. Extensive documentation to the same is provided in the "Github Actions-Azure Integration.pdf" file in the docs folder.
 ---
 <p align="center">
   <a href="#movie_camera-checkout-our-video">Checkout our video</a>
