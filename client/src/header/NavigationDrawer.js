@@ -14,12 +14,12 @@ import { NavLink as Link } from "react-router-dom";
 
 const styles = () => ({
   root: {
-    width: "150",
-  },
+    width: "150"
+  }
 });
 function NavigationDrawer({ classes }) {
   const context = useContext(AppContext);
-  return(
+  return (
     <React.Fragment>
       <Drawer open={context.isDrawerOpen} onClose={context.toggleDrawer}>
         <List component="nav">
