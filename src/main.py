@@ -3,6 +3,7 @@ import uvicorn
 from typing import Optional
 from typing import List
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import RedirectResponse
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
@@ -23,6 +24,17 @@ class jsonScraps(BaseModel):
 
 app = FastAPI()
 
+origins = [
+    "http://localhost:3000",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 async def read_root():
