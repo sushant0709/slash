@@ -22,6 +22,12 @@ class jsonScraps(BaseModel):
     link: Optional[str] = None
 
 
+# response type for variety count api
+class analysisVarietyCountJson(BaseModel):
+    website: str
+    count: int
+
+
 app = FastAPI()
 
 origins = [
@@ -35,6 +41,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
 
 @app.get("/")
 async def read_root():
@@ -118,6 +125,68 @@ async def search_items_API(
         # No results
         return None
 
+
+@app.get("/analysis/varietyCount/all/{item_name}", response_model=List[analysisVarietyCountJson])
+async def items_variety_count_analysis_API(
+    item_name: str,
+    order_by_col: Optional[str] = None,
+    reverse: Optional[bool] = False
+):
+    '''
+    Parameters
+    ----------
+    item_name: string of item to be searched
+
+    Returns
+    ----------
+    itemListJson: JSON List
+        list of count of varieties of the item across all websites as JSON List
+    '''
+
+    # building argument
+    args = {
+        'search': item_name,
+        'sort': 'pr' if order_by_col == 'price' else 'pr',  # placeholder TDB
+        'des': reverse,  # placeholder TBD
+        # 'num': listLengthInd,
+        # 'relevant': relevant
+    }
+
+    scrapers = []
+    scrapers.append('amazon')
+    scrapers.append('walmart')
+    scrapers.append('target')
+    scrapers.append('costco')
+    scrapers.append('bestbuy')
+    scrapers.append('ebay')
+
+    # calling scraper.scrape to fetch results
+    itemList = scr.scrape(args=args, scrapers=scrapers)
+
+    variety_count_dict = {
+        'amazon': 0,
+        'walmart': 0,
+        'target': 0,
+        'costco': 0,
+        'bestbuy': 0,
+        'ebay': 0
+    }
+
+    # iterate and parse the itemlist to create a dict of website vs count
+    for item in itemList:
+        website = item['website']
+        variety_count_dict[website] += 1
+
+    variety_count_list = []
+    for key, value in variety_count_dict.items():
+        temp = {
+            "website": key,
+            "count": value
+        }
+        print("temp ----- ", temp)
+        variety_count_list.append(temp)
+
+    return variety_count_list
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8000)
