@@ -1,18 +1,17 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
 ![GitHub](https://img.shields.io/github/license/Urvashi74/slash)
-<<<<<<< HEAD
-![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5646505.svg)](https://doi.org/10.5281/zenodo.5646505)
-=======
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
 [![DOI](https://zenodo.org/badge/431326985.svg)](https://zenodo.org/badge/latestdoi/431326985)
->>>>>>> 3de983c (Updated citation and added the latest zenodo badge)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
-![GitHub issues](https://img.shields.io/github/issues-raw/Urvashi74/slash)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/Urvashi74/slash)
-![Github pull requests](https://img.shields.io/github/issues-pr/Urvashi74/slash)
-![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/Urvashi74/slash)
+![Github](https://img.shields.io/badge/language-node-red.svg)
+![GitHub issues](https://img.shields.io/github/issues-raw/NCSU-Group7-SE2021/slash)
+![Github closes issues](https://img.shields.io/github/issues-closed-raw/NCSU-Group7-SE2021/slash)
+![Github pull requests](https://img.shields.io/github/issues-pr/NCSU-Group7-SE2021/slash)
+![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/NCSU-Group7-SE2021/slash)
+[![Node.js CI](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/node.js.yml/badge.svg)](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/node.js.yml)
+[![Python Application](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/python-app.yml/badge.svg)](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/python-app.yml)
+[![codecov](https://codecov.io/gh/NCSU-Group7-SE2021/slash/branch/main/graph/badge.svg?token=E9TCZQ6NGF)](https://codecov.io/gh/NCSU-Group7-SE2021/slash)
 
 Do you love shopping? Are you in search of some good deals while shopping online?! Slash is here to help you look for the best deals!
 
@@ -71,10 +70,18 @@ https://user-images.githubusercontent.com/25104264/140454029-315ceada-ffe1-434a-
 git clone https://github.com/secheaper/slash.git
 cd slash
 ```
-2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
+2. This project uses Python 3 for the backend and React framework for the frontend. 
+
+For the backend setup ensure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All the python requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
 ```
 pip3 install -r requirements.txt
 ```
+For the frontend setup ensure that [Node](https://nodejs.org/en/) is preinstalled. All the node requirements are listed in ```client/package.json``` file. Use npm to install all of those.
+```
+cd client
+npm install
+```
+
 4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the python command to run the ```main.py``` file.
 ```
 cd src
@@ -84,6 +91,12 @@ python3 main.py
 
 For Windows
 python main.py
+```
+
+5. Once the backend is up and running, you will have to ```cd``` into the ```client``` folder. Once in the ```client``` folder, use the node command to start the webserver.
+```
+cd client
+npm run start
 ```
 
 :computer: Technology Used
