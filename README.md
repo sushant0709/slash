@@ -1,8 +1,13 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
 ![GitHub](https://img.shields.io/github/license/Urvashi74/slash)
+<<<<<<< HEAD
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5646505.svg)](https://doi.org/10.5281/zenodo.5646505)
+=======
+![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
+[![DOI](https://zenodo.org/badge/431326985.svg)](https://zenodo.org/badge/latestdoi/431326985)
+>>>>>>> 3de983c (Updated citation and added the latest zenodo badge)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Urvashi74/slash)
 ![Github closes issues](https://img.shields.io/github/issues-closed-raw/Urvashi74/slash)
