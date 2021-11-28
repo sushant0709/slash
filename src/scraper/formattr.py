@@ -22,6 +22,7 @@ def formatResult(website, titles, prices, links):
     necessary values from the HTML code. Ex. extracting a price '$19.99' from
     a paragraph tag.
     """
+    
     title, price, link = '', '', ''
     if titles:
         title = titles[0].get_text().strip()
@@ -36,7 +37,7 @@ def formatResult(website, titles, prices, links):
         "link": f'www.{website}.com{link}',
         "website": website,
     }
-    if website == 'costco':
+    if website == 'costco' or website == 'target':
         product['link'] = f'{link}'
     return product
 

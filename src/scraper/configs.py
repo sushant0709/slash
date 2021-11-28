@@ -97,7 +97,8 @@ def scrape_target(query):
             'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
             'title': formatTitle(p['item']['product_description']['title']),
             'price': '$' + str(p['price']['current_retail']),
-            'website': 'target'
+            'website': 'target',
+            'link': p['item']['enrichment']['buy_url'],
         }
         items.append(item)
 
