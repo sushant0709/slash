@@ -1,7 +1,7 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
 ![GitHub](https://img.shields.io/github/license/Urvashi74/slash)
-![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
+![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5646505.svg)](https://doi.org/10.5281/zenodo.5646505)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/Urvashi74/slash)
@@ -47,7 +47,7 @@ Slash was envisioned as a console application in Phase-I which was meant to be u
   <a href="#sparkles-contributors">Contributors</a>
   ::
   <a href="#email-support">Support</a>
-  
+
 </p>
 
 ---
@@ -100,7 +100,7 @@ python main.py
 ## Documentation
 
 Documentation can be accessed anytime via the below link.
- 
+
 	 `https://slash-app-staging.azurewebsites.net/`
 
 ## Search Items Api
@@ -112,7 +112,7 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 **Required parameters:**
 
  - **site**: *az* for amazon; *wm* for walmart; *eb* for ebay; *cc* for costco; *tg* for target and *bb* for bustbuy. Alternatively '*all*' in site can be used to get results for all sites.
-    
+
  - **item_name**: items to be searched by slash web api; *examples below*
 
 `https://slash-app-staging.azurewebsites.net/az/toys`
@@ -146,13 +146,23 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 - Chrome Extension using the functionalities of Slash API
 - An iOS app or Android application.
 
-:sparkles: Contributors
----
-* [Anirudh Pande](https://github.com/apande95)
-* [Bradley Erickson](https://github.com/bradley-erickson)
-* [Lalit Bangad](https://github.com/lalit10)
-* [Pratyush Vaidya](https://github.com/Pratyush1184)
-* [Urvashi Kar](https://github.com/Urvashi74)
+# Team Members
+
+## Phase 2 Team Members
+- [Rahul Kalita](https://github.com/rahulkalita8)
+- [Vignesh Muthukumar](https://github.com/vickymhs)
+- [Eshita Arza](https://github.com/ArzaEshita)
+- [Luis](https://github.com/lgdeloss)
+- [Isha Gupta](https://github.com/isha-bansal0115)
+- [Kiran Teja](https://github.com/kirantejatummuri)
+
+
+## Phase 1 Team Members
+* [Anirudh Pande]
+* [Bradley Erickson]
+* [Lalit Bangad]
+* [Pratyush Vaidya]
+* [Urvashi Kar]
 
 :email: Support
 ---
