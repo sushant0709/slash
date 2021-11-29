@@ -235,7 +235,6 @@ def getItemInfoByItemName(args):
 
     # calling scraper.scrape to fetch results
     itemList = scr.scrape(args=args, scrapers=scrapers)
-
     return itemList
 
 
