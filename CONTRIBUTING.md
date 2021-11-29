@@ -4,9 +4,10 @@ Thank you so much for taking an interest in contributing! We are delighted when 
 
 ## 🤔 What should I know before I get started?
 
-1. Check [README.md](https://github.com/Urvashi74/slash/blob/main/README.md)
-2. Check [requirements.txt](https://github.com/Urvashi74/slash/blob/main/requirements.txt)
-3. Check [setup.py](https://github.com/Urvashi74/slash/blob/main/setup.py)
+1. Check [README.md](https://github.com/NCSU-Group7-SE2021/slash/blob/main/README.md)
+2. Check [requirements.txt](https://github.com/NCSU-Group7-SE2021/slash/blob/main/requirements.txt)
+3. Check [setup.py](https://github.com/NCSU-Group7-SE2021/slash/blob/main/setup.py)
+4. Check [issues](https://github.com/NCSU-Group7-SE2021/slash/issues).
 
 Understand the current and future scope.
 
@@ -41,12 +42,18 @@ Enhancement suggestions are tracked as GitHub issues. Create an issue on that re
 *	Provide a step-by-step description of the suggested enhancement in as many details as possible.
 *	Provide specific examples to demonstrate the steps. Include copy/paste able snippets which you use in those examples, as Markdown code blocks.
 *	Describe the current behavior and explain which behavior you expected to see instead and why.
+*   Documentation is an integral part of our repository. Submit updates and improvements to documentations.
+*   Share with us any new exciting feature you might have in mind.
 
 ## 🙇 Pull Requests
 1. Ensure any install or build dependencies are removed before the end of the layer when doing a build.
-2. Update the [README.md](https://github.com/Urvashi74/slash/blob/main/README.md) with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
-3. Increase the version numbers in any examples files and the [README.md](https://github.com/Urvashi74/slash/blob/main/README.md) to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
-4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
+2. Update the [README.md](https://github.com/NCSU-Group7-SE2021/slash/blob/main/README.md) with details of changes to the interface, this includes new environment variables, exposed ports, useful file locations and container parameters.
+3. Increase the version numbers in any examples files and the [README.md](https://github.com/NCSU-Group7-SE2021/slash/blob/main/README.md) to the new version that this Pull Request would represent. The versioning scheme we use is SemVer.
+4. After submitting your PR, the first thing you would want to do will be a self review. Barring special circumstances, maintainers will not review PRs until all checks pass (Travis, AppVeyor, etc).
+5. One or more maintainers will use GitHub's review feature to review your PR.
+6. If the maintainer asks for any changes, edit your changes, push, and ask for another review. Additional tags (such as needs-tests) will be added depending on the review.
+7. If the maintainer decides to pass on your PR, they will thank you for the contribution and explain why they won't be accepting the changes. That's ok! We still really appreciate you taking the time to do it, and we don't take that lightly.
+8. You may merge the Pull Request in once you have the sign-off of two other developers, or if you do not have permission to do that, you may request the second reviewer to merge it for you.
 
 ## 👒 Styleguides
 
@@ -74,6 +81,15 @@ These Contributing guidelines are adapted from the [Atom's](https://github.com/a
 
 ## 💻 Contributors
 
+### Phase 3 Team Members
+- [Rahul Kalita](https://github.com/rahulkalita8)
+- [Vignesh Muthukumar](https://github.com/vickymhs)
+- [Eshita Arza](https://github.com/ArzaEshita)
+- [Luis](https://github.com/lgdeloss)
+- [Isha Gupta](https://github.com/isha-bansal0115)
+- [Kiran Teja](https://github.com/kirantejatummuri)
+
+### Phase 2 Team Members
 * [Anirudh Pande](https://github.com/apande95)
 * [Bradley Erickson](https://github.com/bradley-erickson)
 * [Lalit Bangad](https://github.com/lalit10)
