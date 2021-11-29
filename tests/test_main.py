@@ -15,7 +15,7 @@ class TestMain(unittest.TestCase):
     
     def test_getItemInfoByItemName(self):
         # building argument
-        item_name = "books"
+        item_name = "chair"
         order_by_col = ""
         reverse = False
 
