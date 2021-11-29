@@ -10,7 +10,7 @@ import { Stack, TextField } from '@mui/material';
 ChartJS.register(CategoryScale, LinearScale, PointElement,
   LineElement, Title, ArcElement, Tooltip, Legend);
 
-function Charts() {
+function Graphs() {
 
   const handleSubmission = () => {
     setButton('Fetching')
@@ -167,4 +167,4 @@ function Charts() {
     );
 }
 
-export default Charts;
+export default Graphs;
