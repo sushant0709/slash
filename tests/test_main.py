@@ -1,3 +1,4 @@
+from os import link
 import unittest
 from src.main import getFloatPrice, getItemInfoByItemName
 
@@ -34,7 +35,15 @@ class TestMain(unittest.TestCase):
             {'timestamp': '29/11/2021 10:56:01', 'title': 'Razer - Iskur Gaming Chair with Built-in...', 'price': '$349.99', 'link': 'www.bestbuy.com/site/razer-iskur-gaming-chair-with-built-in-lumbar-support-black/6476898.p?skuId=6476898', 'website': 'bestbuy'}, 
             {'timestamp': '29/11/2021 10:56:02', 'title': 'Steelcase Leap V2 Chair,  -Open Box- Ful...', 'price': '$329.11', 'website': 'ebay', 'link': 'https://www.ebay.com/itm/Steelcase-Leap-V2-Chair-Open-Box-Fully-Loaded-Black-Fabric-/121882349228'}
             ]
-        assert getItemInfoByItemName(args) == response
+        
+        itemList = getItemInfoByItemName(args)
+        assert itemList[0]['title'] == response[0]['title'] and itemList[0]['price'] == response[0]['price'] and itemList[0]['link'] == response[0]['link'] and itemList[0]['website'] == response[0]['website'] and
+        itemList[1]['title'] == response[1]['title'] and itemList[1]['price'] == response[1]['price'] and itemList[1]['link'] == response[1]['link'] and itemList[1]['website'] == response[1]['website'] and
+        itemList[2]['title'] == response[2]['title'] and itemList[2]['price'] == response[2]['price'] and itemList[2]['link'] == response[2]['link'] and itemList[2]['website'] == response[2]['website'] and
+        itemList[3]['title'] == response[3]['title'] and itemList[3]['price'] == response[3]['price'] and itemList[3]['link'] == response[3]['link'] and itemList[3]['website'] == response[3]['website'] and
+        itemList[4]['title'] == response[4]['title'] and itemList[4]['price'] == response[4]['price'] and itemList[4]['link'] == response[4]['link'] and itemList[4]['website'] == response[4]['website'] and
+        itemList[5]['title'] == response[5]['title'] and itemList[5]['price'] == response[5]['price'] and itemList[5]['link'] == response[5]['link'] and itemList[5]['website'] == response[5]['website'] and
+
     # def test_getVarietyCountByWebsite(self):
     #     """
     #     Assert variety count values
