@@ -23,15 +23,15 @@ Slash is a publicly accessible web API framework that allows one to scrape the m
 
 ---
 
-:rocket: Improvements over Phase-I
+:rocket: Improvements over Phase-II
 ---
 
-Slash was envisioned as a console application in Phase-I which was meant to be used as a standalone native Python desktop application. Even though a native application is good in usecases such as heavy processing and zero downtime but in the bigger picture, it fades in comparison to an online web application. Our efforts in phase-II were to convert a native desktop Python application to a web application(APIs) and expand the horizon by bringing in more e-commerce websites support as well as support for API calls to sites that don't support scraping. Our vision is to provide a one-stop abstraction for all web scraping needs which is packaged in a sleek and easy to implement cloud pipeline. Integrating CI/CD to our API was crucial to our goal as we believe the next phase should not dwell in the past but rather focus on the future. Below is the breakdown of step by step improvement and our reasoning behind the same:
-1) Web Scraper Extension: Added additional websites to the scraper logic. Even though the earlier scraper was targeting popular sites like Amazon and Walmart, we all know that the more the merrier. So, we integrated Target, CostCo, eBay and BestBuy to our scraper logic which enabled us to provide more options to the users.
-2) Web APIs: We created a web API to access internal scraper logic in a streamlined manner. Using a single path, all the different e-commerce sites can be scraped and results can be obtained. We believe that creating an API for scraper code was the next logical step for expanding the usecase of our application.
-3) Export functionality: Using the same link to access our scraper web API and sending the optional parameter export=True, generates a csv file of our results. This file can directly be worked upon by other applications or can be used to drive the business logic.
-4) Uvicorn Server: We used a lightweight ASGI(Asynchronous Server Gateway Interface) server called the Uvicorn server. This server enables us to quickly host the fastAPI APIs in a quick and seamless way.
-5) Cloud: Our next step involved the conversion from a local web application to a cloud application to ensure no downtime and complete availability. We deployed the API onto cloud (Microsoft Azure) and enabled CI/CD using Github Actions. Docker was used as a container to run our uvicorn server. We then deployed Dockerised services on Azure. Extensive documentation to the same is provided in the [Github Actions-Azure Integration.pdf](https://github.com/Urvashi74/slash/blob/main/docs/Github%20Actions-Azure%20Integration.pdf) file in the docs folder.
+We have added a lot of new features to slash in our Phase-III. 
+1. A web interface for users to interact with the application in a more native way. 
+2. Charts and graphs for better visualization of the results
+3. Analysis for price prediction for products
+4. Analysis for variety count of products per e-commerce store.
+
 ---
 <p align="center">
   <a href="#movie_camera-checkout-our-video">Checkout our video</a>
@@ -174,13 +174,6 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 - [Isha Gupta](https://github.com/isha-bansal0115)
 - [Kiran Teja](https://github.com/kirantejatummuri)
 
-
-## Phase 2 Team Members
-* Anirudh Pande
-* Bradley Erickson
-* Lalit Bangad
-* Pratyush Vaidya
-* Urvashi Kar
 
 :email: Support
 ---
