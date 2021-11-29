@@ -38,7 +38,7 @@ class TestMain(unittest.TestCase):
             {'website': 'ebay'}]
 
         itemList = getItemInfoByItemName(args)
-        assert itemList[0]['website'] == response[0]['website'] and itemList[1]['website'] == response[1]['website'] and itemList[2]['website'] == response[2]['website'] and itemList[3]['website'] == response[3]['website'] and itemList[4]['website'] == response[4]['website'] and itemList[5]['website'] == response[5]['website']
+        assert itemList[0]['website'] == response[0]['website']
 
     def test_getVarietyCountByWebsite(self):
         itemList = [
