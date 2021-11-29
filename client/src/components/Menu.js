@@ -3,12 +3,15 @@ import Button from "@mui/material/Button";
 import LoadingButton from "@mui/lab/LoadingButton";
 import { Stack, TextField } from "@mui/material";
 import getResults from "../util";
+import { useNavigate } from "react-router-dom";
 
 function Menu() {
+  const navigate = useNavigate();
   const fetchResults = async () => {
     let result = null;
     try {
       result = await getResults("all", searchItem);
+      navigate("/results", { state: { response: result } });
     } catch (error) {
       console.log(error);
     } finally {
