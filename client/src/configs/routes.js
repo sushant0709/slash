@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../components/Home";
 import HomeIcon from "@mui/icons-material/Home";
 import Menu from "../components/Menu";
-import Charts from "../components/Charts";
+import Graphs from "../components/Graphs";
 import Results from "../components/Results";
 import SummarizeIcon from '@mui/icons-material/Summarize';
 import EqualizerIcon from '@mui/icons-material/Equalizer';
@@ -28,9 +28,9 @@ export const routes = [
     icon: <EqualizerIcon />,
   },
   {
-    path: "/charts",
-    name: "Charts",
-    element: <Charts />,
+    path: "/graphs",
+    name: "Graphs",
+    element: <Graphs />,
     icon: <InsightsIcon />,
   }
 ];
