@@ -268,15 +268,14 @@ def getLowestHighestPriceByWebsite(itemList):
         'amazon': "", 'walmart': "", 'target': "", 'costco': "", 'bestbuy': "", 'ebay': ""
     }
 
-    # print("****************************************************************")
     for item in itemList:
-        # print(item)
+
         if(item['price'] == ''):
             continue
         website = item['website']
         price = getFloatPrice(item['price'])
 
-        # print(website + " ------ " + item['price'] + " " + str(price))
+
         if(price < lowest_price_dict[website]):
             lowest_price_dict[website] = price
             lowest_price_link_dict[website] = item['link']
@@ -285,11 +284,6 @@ def getLowestHighestPriceByWebsite(itemList):
             highest_price_dict[website] = price
             highest_price_link_dict[website] = item['link']
 
-        # lowest_price_dict[website] = min(lowest_price_dict[website], price)
-        # highest_price_dict[website] = max(highest_price_dict[website], price)
-
-    print(lowest_price_dict)
-    print(highest_price_dict)
     return lowest_price_dict, lowest_price_link_dict, highest_price_dict, highest_price_link_dict
 
 
