@@ -91,7 +91,7 @@ async def search_items_API(
     '''
     # logging in file
     file = open("logger.txt", "a")
-    file.write('amazon query:' + str(item_name)+'\n')
+    file.write(site +' query:' + str(item_name)+'\n')
 
     # building argument
     args = {
