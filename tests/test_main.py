@@ -28,14 +28,15 @@ class TestMain(unittest.TestCase):
         }
 
         response = [
-            {'timestamp': '29/11/2021 10:55:55', 
-            'title': 'Amazon Basics Padded Office Desk Chair w...', 
-            'price': '$74.72', 
-            'link': 'www.amazon.com/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A044744711O2LMGRIQBH6&url=%2FAmazon-Basics-Ergonomic-Adjustable-360-Degree%2Fdp%2FB0735X2M1J%2Fref%3Dsr_1_1_sspa%3Fkeywords%3Dchair%26qid%3D1638201353%26sr%3D8-1-spons%26psc%3D1&qualifier=1638201353&id=2930947703909538&widgetName=sp_atf', 
-            'website': 'amazon'}]
+            {'website': 'amazon'},
+            {'website': 'walmart'},
+            {'website': 'target'},
+            {'website': 'costco'},
+            {'website': 'bestbuy'},
+            {'website': 'ebay'}]
         
         itemList = getItemInfoByItemName(args)
-        assert itemList[0]['title'] == response[0]['title'] and itemList[0]['price'] == response[0]['price'] and itemList[0]['website'] == response[0]['website']
+        assert itemList[0]['website'] == response[0]['website']
 
     # def test_getVarietyCountByWebsite(self):
     #     """
