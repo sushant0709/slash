@@ -4,33 +4,27 @@ import HomeIcon from "@mui/icons-material/Home";
 import Menu from "../components/Menu";
 import Graphs from "../components/Graphs";
 import Results from "../components/Results";
-import SummarizeIcon from '@mui/icons-material/Summarize';
-import EqualizerIcon from '@mui/icons-material/Equalizer';
-import InsightsIcon from '@mui/icons-material/Insights';
+import SummarizeIcon from "@mui/icons-material/Summarize";
+import EqualizerIcon from "@mui/icons-material/Equalizer";
+import InsightsIcon from "@mui/icons-material/Insights";
 
 export const routes = [
   {
     path: "/",
-    name: "Home",
-    element: <Home />,
-    icon: <HomeIcon />
-  },
-  {
-    path: "/menu",
     name: "Menu",
     element: <Menu />,
-    icon: <SummarizeIcon />,
+    icon: <SummarizeIcon />
   },
   {
     path: "/results",
     name: "Results",
     element: <Results />,
-    icon: <EqualizerIcon />,
+    icon: <EqualizerIcon />
   },
   {
     path: "/graphs",
     name: "Graphs",
     element: <Graphs />,
-    icon: <InsightsIcon />,
+    icon: <InsightsIcon />
   }
 ];

@@ -285,71 +285,88 @@ export default function Results() {
   };
 
   const getClickableLink = (link) => {
-    return link.startsWith("http://") || link.startsWith("https://") ? link : `//${link}`;
+    if (link == null) {
+      return "";
+    } else {
+      return link.startsWith("http://") || link.startsWith("https://") ? link : `//${link}`;
+    }
   };
 
   const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
   const classes = useStyles();
 
-  return (
-    <Box sx={{ width: "100%" }}>
-      <Paper sx={{ width: "100%", mb: 2 }}>
-        <EnhancedTableToolbar />
-        <TableContainer>
-          <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle" size={"medium"}>
-            <EnhancedTableHead
-              order={order}
-              orderBy={orderBy}
-              onRequestSort={handleRequestSort}
-              rowCount={rows.length}
-            />
-            <TableBody>
-              {rows
-                .slice()
-                .sort(getComparator(order, orderBy))
-                .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-                .map((row, index) => {
-                  const labelId = `enhanced-table-checkbox-${index}`;
+  console.log(rows);
+  if (rows == null) {
+    return (
+      <div>
+        <h2>{"Oops I couldn't find what you are looking for! :/"}</h2>
+      </div>
+    );
+  } else {
+    return (
+      <Box sx={{ width: "100%" }}>
+        <Paper sx={{ width: "100%", mb: 2 }}>
+          <EnhancedTableToolbar />
+          <TableContainer>
+            <Table sx={{ minWidth: 750 }} aria-labelledby="tableTitle" size={"medium"}>
+              <EnhancedTableHead
+                order={order}
+                orderBy={orderBy}
+                onRequestSort={handleRequestSort}
+                rowCount={rows.length}
+              />
+              <TableBody>
+                {rows
+                  .slice()
+                  .sort(getComparator(order, orderBy))
+                  .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+                  .map((row, index) => {
+                    const labelId = `enhanced-table-checkbox-${index}`;
 
-                  return (
-                    <TableRow key={index}>
-                      <TableCell component="th" id={labelId} scope="row" align="center" padding="none">
-                        {row.timestamp}
-                      </TableCell>
-                      <TableCell align="center">{row.title}</TableCell>
-                      <TableCell align="center">{row.price}</TableCell>
-                      <TableCell align="center">{row.website}</TableCell>
-                      <TableCell align="center">
-                        <Link href={getClickableLink(row.link)} target="_blank" rel="noopener">
-                          Link
-                        </Link>
-                      </TableCell>
-                    </TableRow>
-                  );
-                })}
-              {emptyRows > 0 && (
-                <TableRow
-                  style={{
-                    height: 53 * emptyRows
-                  }}
-                >
-                  <TableCell colSpan={6} />
-                </TableRow>
-              )}
-            </TableBody>
-          </Table>
-        </TableContainer>
-        <TablePagination
-          rowsPerPageOptions={[5, 10, 25]}
-          component="div"
-          count={rows.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onPageChange={handleChangePage}
-          onRowsPerPageChange={handleChangeRowsPerPage}
-        />
-      </Paper>
-    </Box>
-  );
+                    return (
+                      <TableRow key={index}>
+                        <TableCell component="th" id={labelId} scope="row" align="center" padding="none">
+                          {row.timestamp}
+                        </TableCell>
+                        <TableCell align="center">{row.title}</TableCell>
+                        <TableCell align="center">{row.price}</TableCell>
+                        <TableCell align="center">{row.website}</TableCell>
+                        <TableCell align="center">
+                          {row.link == null ? (
+                            "No link"
+                          ) : (
+                            <Link href={getClickableLink(row.link)} target="_blank" rel="noopener">
+                              Link
+                            </Link>
+                          )}
+                        </TableCell>
+                      </TableRow>
+                    );
+                  })}
+                {emptyRows > 0 && (
+                  <TableRow
+                    style={{
+                      height: 53 * emptyRows
+                    }}
+                  >
+                    <TableCell colSpan={6} />
+                  </TableRow>
+                )}
+              </TableBody>
+            </Table>
+          </TableContainer>
+          <TablePagination
+            rowsPerPageOptions={[5, 10, 25]}
+            component="div"
+            count={rows.length}
+            rowsPerPage={rowsPerPage}
+            page={page}
+            onPageChange={handleChangePage}
+            onRowsPerPageChange={handleChangeRowsPerPage}
+          />
+        </Paper>
+      </Box>
+    );
+  }
 }
