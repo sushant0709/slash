@@ -122,6 +122,13 @@ const useStyles = makeStyles({
   }
 });
 
+/**
+ * Function to compare two operators a and b
+ * @param {*} a dict of items
+ * @param {*} b dict of items
+ * @param {*} orderBy key to order by
+ * @returns
+ */
 function descendingComparator(a, b, orderBy) {
   if (a[orderBy] == "") a[orderBy] = "$0";
   if (b[orderBy] == "") b[orderBy] = "$0";
@@ -137,6 +144,12 @@ function descendingComparator(a, b, orderBy) {
   return 0;
 }
 
+/**
+ * Function to determine ascending or descending order
+ * @param {*} order ascending / descending
+ * @param {*} orderBy key to order by
+ * @returns
+ */
 function getComparator(order, orderBy) {
   return order === "desc"
     ? (a, b) => descendingComparator(a, b, orderBy)
@@ -176,6 +189,11 @@ const headCells = [
   }
 ];
 
+/**
+ * Builds the table header
+ * @param {*} props props passed from the parent component
+ * @returns
+ */
 function EnhancedTableHead(props) {
   const { order, orderBy, rowCount, onRequestSort } = props;
   const createSortHandler = (property) => (event) => {
@@ -236,6 +254,10 @@ const EnhancedTableToolbar = () => {
   );
 };
 
+/**
+ * Genrates the results table
+ * @returns
+ */
 export default function Results() {
   const location = useLocation();
 
