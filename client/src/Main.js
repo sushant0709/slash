@@ -4,6 +4,10 @@ import Grid from "@mui/material/Grid";
 import Navigation from "./header/Navigation";
 import AppContainer from "./header/AppContainer";
 
+/**
+ * Constructs the template for app container
+ * @returns
+ */
 function Main() {
   return (
     <AppContainer>

@@ -18,6 +18,10 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
+/**
+ * Template for constructing the navigational drawer and appbar
+ * @returns
+ */
 export default function Navigation() {
   const classes = useStyles();
   const context = useContext(AppContext);

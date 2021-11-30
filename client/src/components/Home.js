@@ -25,7 +25,6 @@ export default function Home() {
 
   async function getResponse() {
     let response = null;
-    console.log("Running");
     response = await getResults("all", "dell");
     navigate("/results", { state: { response: response } });
   }

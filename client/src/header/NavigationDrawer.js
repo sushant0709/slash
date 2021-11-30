@@ -17,6 +17,12 @@ const styles = () => ({
     width: "150"
   }
 });
+
+/**
+ * Builds the navigation drawer with the various options
+ * @param {*} param0 takes in style element classes
+ * @returns
+ */
 function NavigationDrawer({ classes }) {
   const context = useContext(AppContext);
   return (

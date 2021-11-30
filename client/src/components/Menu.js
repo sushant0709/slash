@@ -5,6 +5,10 @@ import { Stack, TextField, Select, MenuItem, InputLabel, FormControl } from "@mu
 import getResults from "../util";
 import { useNavigate } from "react-router-dom";
 
+/**
+ * Takes in input from user about the product they would like to see the prices for and routes the request to Results page
+ * @returns
+ */
 function Menu() {
   const navigate = useNavigate();
 
