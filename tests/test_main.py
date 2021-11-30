@@ -29,16 +29,11 @@ class TestMain(unittest.TestCase):
             'num': 1
         }
 
-        response = [
-            {'website': 'amazon'},
-            {'website': 'walmart'},
-            {'website': 'target'},
-            {'website': 'costco'},
-            {'website': 'bestbuy'},
-            {'website': 'ebay'}]
+        response = ['amazon', 'walmart', 'target', 'costco', 'bestbuy', 'ebay']
 
         itemList = getItemInfoByItemName(args)
-        assert itemList[0]['website'] == response[0]['website']
+        for item in itemList:
+            assert item['website'] in response
 
     def test_getVarietyCountByWebsite(self):
         itemList = [
