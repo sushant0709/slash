@@ -1,7 +1,7 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
 ![GitHub](https://img.shields.io/github/license/Urvashi74/slash)
-![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg) 
+![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/431326985.svg)](https://zenodo.org/badge/latestdoi/431326985)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![Github](https://img.shields.io/badge/language-node-red.svg)
@@ -15,24 +15,25 @@
 
 Do you love shopping? Are you in search of some good deals while shopping online?! Slash is here to help you look for the best deals!
 
-
 Slash is a publicly accessible web API framework that allows one to scrape the most popular e-commerce websites to get the best deals on the searched items across multiple e-commerce websites. Currently supported websites include [Amazon](https://www.amazon.com/), [Walmart](https://www.walmart.com/), [Target](https://www.target.com/), [BestBuy](https://www.bestbuy.com/), [Costco](https://www.costco.com/) and [EBay](https://www.ebay.com/).
+
 - **Fast**: With slash, you can save over 50% of your time by comparing deals across websites within seconds
 - **Easy**: Slash introduces easy to use public APIs to filter, sort and search through the search results
 - **Powerful**: Produces JSON responses that can be easily customised to bring about the desired output
 
 ---
 
-:rocket: Improvements over Phase-II
----
+## :rocket: Improvements over Phase-II
 
-We have added a lot of new features to slash in our Phase-III. 
-1. A web interface for users to interact with the application in a more native way. 
-2. Charts and graphs for better visualization of the results
-3. Analysis for price prediction for products
+We have added a lot of new features to slash in our Phase-III.
+
+1. A web interface for users to interact with the application in a more native way.
+2. Charts and graphs for better visualization of the results.
+3. Analysis for price prediction of products.
 4. Analysis for variety count of products per e-commerce store.
 
 ---
+
 <p align="center">
   <a href="#movie_camera-checkout-our-video">Checkout our video</a>
   ::
@@ -56,33 +57,38 @@ We have added a lot of new features to slash in our Phase-III.
 
 ---
 
-:movie_camera: Checkout our video
----
+## :movie_camera: Checkout our video
 
 https://user-images.githubusercontent.com/25104264/140454029-315ceada-ffe1-434a-bad6-3c1f389a7795.mp4
 
 ---
 
-:rocket: Installation
----
-1. Clone the Github repository to a desired location on your computer. You will need [git](https://git-scm.com/) to be preinstalled on your machine. Once the repository is cloned, you will then ```cd``` into the local repository.
+## :rocket: Installation
+
+1. Clone the Github repository to a desired location on your computer. You will need [git](https://git-scm.com/) to be preinstalled on your machine. Once the repository is cloned, you will then `cd` into the local repository.
+
 ```
 git clone https://github.com/secheaper/slash.git
 cd slash
 ```
-2. This project uses Python 3 for the backend and React framework for the frontend. 
 
-For the backend setup ensure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All the python requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
+2. This project uses Python 3 for the backend and React framework for the frontend.
+
+For the backend setup ensure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All the python requirements of the project are listed in the `requirements.txt` file. Use pip to install all of those.
+
 ```
 pip3 install -r requirements.txt
 ```
-For the frontend setup ensure that [Node](https://nodejs.org/en/) is preinstalled. All the node requirements are listed in ```client/package.json``` file. Use npm to install all of those.
+
+For the frontend setup ensure that [Node](https://nodejs.org/en/) is preinstalled. All the node requirements are listed in `client/package.json` file. Use npm to install all of those.
+
 ```
 cd client
 npm install
 ```
 
-4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the python command to run the ```main.py``` file.
+4. Once all the requirements are installed, you will have to `cd` into the `src` folder. Once in the `src` folder, use the python command to run the `main.py` file.
+
 ```
 cd src
 
@@ -93,33 +99,32 @@ For Windows
 python main.py
 ```
 
-5. Once the backend is up and running, you will have to ```cd``` into the ```client``` folder. Once in the ```client``` folder, use the node command to start the webserver.
+5. Once the backend is up and running, you will have to `cd` into the `client` folder. Once in the `client` folder, use the node command to start the webserver.
+
 ```
 cd client
 npm run start
 ```
 
-:computer: Technology Used
----
+## :computer: Technology Used
+
 - FastAPI : https://fastapi.tiangolo.com
 - ASGI Server - Uvicorn : https://www.uvicorn.org
 - Docker : https://www.docker.com
 - Azure : https://azure.microsoft.com/en-us/
 
+## :bulb: Use Case
 
-:bulb: Use Case
----
-* ***Students***: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
-* ***Data Analysts***: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
+- **_Students_**: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
+- **_Data Analysts_**: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
+## :file_cabinet: API
 
-:file_cabinet: API
----
 ## Documentation
 
 Documentation can be accessed anytime via the below link.
 
-	 `https://slash-app-staging.azurewebsites.net/`
+     `https://slash-app-staging.azurewebsites.net/`
 
 ## Search Items Api
 
@@ -129,9 +134,9 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 
 **Required parameters:**
 
- - **site**: *az* for amazon; *wm* for walmart; *eb* for ebay; *cc* for costco; *tg* for target and *bb* for bustbuy. Alternatively '*all*' in site can be used to get results for all sites.
+- **site**: _az_ for amazon; _wm_ for walmart; _eb_ for ebay; _cc_ for costco; _tg_ for target and _bb_ for bustbuy. Alternatively '_all_' in site can be used to get results for all sites.
 
- - **item_name**: items to be searched by slash web api; *examples below*
+- **item_name**: items to be searched by slash web api; _examples below_
 
 `https://slash-app-staging.azurewebsites.net/az/toys`
 
@@ -143,13 +148,13 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 - **order_by_col**: string column_name: items will be ordered by the column name. Currently only the 'price' column ordering is supported.
 - **reverse**: boolean val: items will be displayed in the same or the opposite order based on the value of this parameter.
 - **listLengthInd**: integer len(default value is 10): sets the upper limit on the number of entries that will be displayed
-- **export**: boolean val(default value is false): items can be exported in a csv file;; *examples below*
+- **export**: boolean val(default value is false): items can be exported in a csv file;; _examples below_
 
 `https://slash-app-staging.azurewebsites.net/all/dell?export=false&listLengthInd=5&order_by_col=price&reverse=false`
 
-:page_facing_up: Why
----
-- In a market where we are spoilt for choices, we often look for the best deals.  
+## :page_facing_up: Why
+
+- In a market where we are spoilt for choices, we often look for the best deals.
 - The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
 - The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
 - E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
@@ -157,16 +162,18 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 - Slash in its current form is for students who wish to get the best deals out of every e-commerce site and can be used by anyone who is willing to develop an application that consumes these web APIs.
 - Future scope includes anything from a web application with a frontend or any Android or IOS application that utilises these Web APIs at their backend. Anyone can build their own custom application on top of these web APIs.
 
-:golf: Future Roadmap
----
+## :golf: Future Roadmap
+
+- Host website on a public server so customers can use it
+- Add login feature to store user history to provide features like bookmarking, price drop alerts and many more.
 - Our API can be used by end users such as developers who are tech-savvy individuals looking to get a one stop solution for web scraping ecommerce websites such as Amazon, Target, Ebay,etc along with API access to multiple ecommerce websites. It'll be available directly for access to people without having to dive deep into the code.
-- Front End implementation of Slash API , ie., converting it into a full stack web application.
 - Chrome Extension using the functionalities of Slash API
-- An iOS app or Android application.
+- An iOS or Android application.
 
 # Team Members
 
 ## Phase 3 Team Members
+
 - [Rahul Kalita](https://github.com/rahulkalita8)
 - [Vignesh Muthukumar](https://github.com/vickymhs)
 - [Eshita Arza](https://github.com/ArzaEshita)
@@ -174,7 +181,6 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 - [Isha Gupta](https://github.com/isha-bansal0115)
 - [Kiran Teja](https://github.com/kirantejatummuri)
 
+## :email: Support
 
-:email: Support
----
-For any queries and help, please reach out to us at: slashcsc510@gmail.com
+For any queries and help, please reach out to us at: SEslash007@gmail.com
