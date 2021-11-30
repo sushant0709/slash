@@ -15,3 +15,17 @@ all query:dell
 all query:dell
 all query:dell
 all query:dell
+all query:lenovo
+all query:dell
+all query:dell
+amazon query:dell
+az query:dell
+null query:dell
+az query:dell
+wm query:dell
+bb query:dell
+cc query:dell
+tg query:dell
+eb query:dell
+bb query:dell
+all query:dell

@@ -1,16 +1,17 @@
 import React, { useState } from "react";
 import Button from "@mui/material/Button";
 import LoadingButton from "@mui/lab/LoadingButton";
-import { Stack, TextField } from "@mui/material";
+import { Stack, TextField, Select, MenuItem, InputLabel, FormControl } from "@mui/material";
 import getResults from "../util";
 import { useNavigate } from "react-router-dom";
 
 function Menu() {
   const navigate = useNavigate();
+
   const fetchResults = async () => {
     let result = null;
     try {
-      result = await getResults("all", searchItem);
+      result = await getResults(searchWeb, searchItem);
       navigate("/results", { state: { response: result } });
     } catch (error) {
       console.log(error);
@@ -28,6 +29,7 @@ function Menu() {
 
   const [button, setButton] = useState("Default");
   const [searchItem, setSearchItem] = useState(undefined);
+  const [searchWeb, setSearchWeb] = useState(undefined);
 
   return (
     <div>
@@ -35,11 +37,31 @@ function Menu() {
         {button === "Default" ? (
           <Stack direction="row" alignItems="center" spacing={2}>
             <TextField
+              fullWidth
               id="outlined-basic"
               label="Item Name"
               variant="outlined"
               onChange={(e) => setSearchItem(e.target.value)}
             />
+            <FormControl fullWidth>
+              <InputLabel variant="outlined" htmlFor="outlined-basic1">
+                Website Name
+              </InputLabel>
+              <Select
+                id="outlined-basic1"
+                label="Website Name"
+                variant="outlined"
+                onChange={(e) => setSearchWeb(e.target.value)}
+              >
+                <MenuItem value="az">Amazon</MenuItem>
+                <MenuItem value="wm">Walmart</MenuItem>
+                <MenuItem value="eb">Ebay</MenuItem>
+                <MenuItem value="cc">Costco</MenuItem>
+                <MenuItem value="tg">Target</MenuItem>
+                <MenuItem value="bb">BestBuy</MenuItem>
+                <MenuItem value="all">All</MenuItem>
+              </Select>
+            </FormControl>
             <Button size="medium" variant="contained" color="secondary" onClick={handleSubmission}>
               Search Item
             </Button>
