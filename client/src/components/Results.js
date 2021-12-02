@@ -260,14 +260,22 @@ const EnhancedTableToolbar = () => {
  */
 export default function Results() {
   const location = useLocation();
-
-  const rows = JSON.parse(location.state.response);
-  console.log(rows);
-
   const [order, setOrder] = React.useState("asc");
   const [orderBy, setOrderBy] = React.useState("price");
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  let rows = null;
+
+  if (location.state == null) {
+    return (
+      <div>
+        <h2>{"Search for what you want in the menu page so I can find related information for you!"}</h2>
+      </div>
+    );
+  } else {
+    rows = JSON.parse(location.state.response);
+    console.log(rows);
+  }
 
   const handleRequestSort = (event, property) => {
     const isAsc = orderBy === property && order === "asc";
@@ -294,7 +302,7 @@ export default function Results() {
 
   const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   console.log(rows);
   if (rows == null) {
