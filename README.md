@@ -59,7 +59,7 @@ We have added a lot of new features to slash in our Phase-III.
 
 ## :movie_camera: Checkout our video
 
-https://user-images.githubusercontent.com/25104264/140454029-315ceada-ffe1-434a-bad6-3c1f389a7795.mp4
+<p align="center"><img width="700" src="./assets/slash-phase3.gif"></p>
 
 ---
 
