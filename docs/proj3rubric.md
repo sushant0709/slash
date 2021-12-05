@@ -7,15 +7,15 @@
 |.5|Docs: doco generated , format not ugly  | 0.5 | https://github.com/NCSU-Group7-SE2021/slash |
 |.5|evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people) | 0.5 | Everyone has a working instance of the project locally. All the team members are using the same version of the programming language and have all the required packages installed. |
 |.5|evidence that the members of the team are working across multiple places in the code base | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/graphs/contributors |
-|1|Docs: what: point descriptions of each class/function (in isolation)  | 1 | ** pending ** |
+|1|Docs: what: point descriptions of each class/function (in isolation)  | 1 | https://github.com/NCSU-Group7-SE2021/slash/tree/main/client, https://slash-app-staging.azurewebsites.net/ |
 |.5|Number of commits: by different people  | 0.33 | https://github.com/NCSU-Group7-SE2021/slash/graphs/commit-activity |
 |1|issues are being closed | 1 | https://github.com/NCSU-Group7-SE2021/slash/issues |
 |.5|issues are discussed before they are closed | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/issues?q=is%3Aissue+is%3Aclosed|
-|.5|Use of syntax checkers. | 0.5 | ** pending ** |
+|.5|Use of syntax checkers. | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/blob/main/.github/workflows/python-app.yml |
 |1|Issues reports: there are many  | 1 | https://github.com/NCSU-Group7-SE2021/slash/issues |
 |.5|Use of code formatters. | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/blob/main/.github/workflows/python-app.yml |
 |.5|Use of style checkers | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/blob/main/client/.prettierrc|
-|.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | 0.5 | **pending** |
+|.5|Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code. | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/blob/main/assets/slash-phase3.gif |
 |.5|test cases exist  | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/actions, https://app.codecov.io/gh/NCSU-Group7-SE2021/slash|
 |.5|Use of code coverage  | 0.5 | https://github.com/NCSU-Group7-SE2021/slash/blob/main/.github/workflows/python-app.yml, https://github.com/NCSU-Group7-SE2021/slash/blob/main/.github/workflows/node.js.yml, https://app.codecov.io/gh/NCSU-Group7-SE2021/slash|
 |.5|other automated analysis tools  | 0.5 | No explicit analysis is done in the project. Made use of Pylint, CodeCoverage, Github workflows, prettier etc to anaylse the quality of the project. Can check the status for the same through badges on homepage of repo. https://github.com/NCSU-Group7-SE2021/slash |
