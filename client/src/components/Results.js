@@ -264,6 +264,7 @@ export default function Results() {
   const [orderBy, setOrderBy] = React.useState("price");
   const [page, setPage] = React.useState(0);
   const [rowsPerPage, setRowsPerPage] = React.useState(10);
+
   let rows = null;
 
   if (location.state == null) {
@@ -301,7 +302,6 @@ export default function Results() {
   };
 
   const emptyRows = page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0;
-
   // const classes = useStyles();
 
   console.log(rows);
@@ -377,4 +377,5 @@ export default function Results() {
       </Box>
     );
   }
+ 
 }
