@@ -85,6 +85,7 @@ def scrape_amazon(query):
                 'price': '$' + str(p['price']['value']),
                 'website': 'amazon',
                 'link': p['link'],
+                'image': p['image'],
             }
             items.append(item)
         
@@ -154,6 +155,7 @@ def scrape_target(query):
             'price': '$' + str(p['offers']['primary']['price']),
             'website': 'target',
             'link': p['product']['link'],
+            'image': p['product']['main_image'],
         }
         items.append(item)
         
