@@ -19,17 +19,47 @@ WALMART = {
     'link_indicator': 'a'
 }
 
-AMAZON = {
-    'site': 'amazon',
-    'url': 'https://www.amazon.com/s?k=',
-    'item_component': 'div',
-    'item_indicator': {
-        'data-component-type': 's-search-result'
-    },
-    'title_indicator': 'h2 a span',
-    'price_indicator': 'span.a-price span',
-    'link_indicator': 'h2 a.a-link-normal'
-}
+# idividual scrapper
+def scrape_amazon(query):
+    """Scrape Amazon's api for data
+
+    Parameters
+    ----------
+    query: str
+        Item to look for in the api
+
+    Returns
+    ----------
+    items: list
+        List of items from the dict
+    """
+
+    api_url = 'https://api.rainforestapi.com/request'
+
+    page = '/s/' + query
+
+    params = {
+    'api_key': '2EB92CC426BE4DAF87CB7B0AC9064676',
+    'type': 'search',
+    'amazon_domain': 'amazon.com',
+    'search_term': query,
+    }
+    
+    data = requests.get(api_url, params=params).json()
+
+    items = []
+    for p in data['search_results']:
+        if 'price' in p:
+            item = {
+                'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+                'title': formatTitle(p['title']),  
+                'price': '$' + str(p['price']['value']),
+                'website': 'amazon',
+                'link': p['link'],
+            }
+            items.append(item)
+        
+    return items
 
 COSTCO = {
     'site': 'costco',
@@ -144,4 +174,4 @@ def scrape_ebay(query):
     return items
 
 
-CONFIGS = [WALMART, AMAZON, COSTCO, BESTBUY]
+CONFIGS = [WALMART, COSTCO, BESTBUY]
