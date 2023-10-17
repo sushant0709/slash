@@ -20,6 +20,7 @@ class jsonScraps(BaseModel):
     price: str
     website: str
     link: Optional[str] = None
+    image: Optional[str] = None
 
 
 # response type for variety count api
