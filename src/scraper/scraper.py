@@ -4,7 +4,9 @@ import requests
 
 # local imports
 import scraper.formattr as form
-from scraper.configs import WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target, scrape_amazon
+from scraper.configs import COSTCO, BESTBUY, scrape_ebay, scrape_walmart, scrape_target, scrape_amazon
+
+
 
 
 def httpsGet(URL):
@@ -29,6 +31,8 @@ def httpsGet(URL):
         'Upgrade-Insecure-Requests': '1',
         'Cache-Control': 'no-cache'
     }
+
+
     s = requests.Session()
     page = s.get(URL, headers=headers)
     if page.status_code == 200:
@@ -70,9 +74,14 @@ def search(query, config):
     products = []
     for res in results:
         title = res.select(config['title_indicator'])
+        if 'title' in res:
+            heading = res.select(config['title'])
+            if len(title) < len(heading):
+                title = heading
         price = res.select(config['price_indicator'])
         link = res.select(config['link_indicator'])
-        product = form.formatResult(config['site'], title, price, link)
+        image = res.select(config['image_indicator'])
+        product = form.formatResult(config['site'], title, price, link, image)
         products.append(product)
     return products
 
@@ -103,7 +112,7 @@ def scrape(args, scrapers):
     overall = []
     for scraper in scrapers:
         if scraper == 'walmart':
-            local = search(query, WALMART)
+            local = scrape_walmart(query)
         elif scraper == 'amazon':
             local = scrape_amazon(query)
         elif scraper == 'target':
@@ -122,6 +131,6 @@ def scrape(args, scrapers):
         overall.extend(local)
 
     for sort_by in args['sort']:
-        overall = form.sortList(overall, sort_by, args['des'])
+        overall = form.sortList(overall, sort_by, args['des'])    
 
     return overall
