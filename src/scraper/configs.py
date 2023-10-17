@@ -100,6 +100,7 @@ COSTCO = {
     'title_indicator': 'span a',
     'price_indicator': 'div.price',
     'link_indicator': 'span.description a',
+    'image_indicator': 'a.product-image-url img',
 }
 
 BESTBUY = {
@@ -197,4 +198,4 @@ def scrape_ebay(query):
     return items
 
 
-CONFIGS = [WALMART, COSTCO, BESTBUY]
+CONFIGS = [COSTCO, BESTBUY]
