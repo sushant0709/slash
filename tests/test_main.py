@@ -26,7 +26,7 @@ class TestMain(unittest.TestCase):
             'search': item_name,
             'sort': 'pr' if order_by_col == 'price' else 'pr',
             'des': reverse,
-            'num': 1
+            'num': 1,
             'src': ''
         }
 
