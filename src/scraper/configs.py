@@ -6,18 +6,47 @@ from ebaysdk.finding import Connection
 # local imports
 from scraper.formattr import formatTitle
 
-# configs
-WALMART = {
-    'site': 'walmart',
-    'url': 'https://www.walmart.com/search?q=',
-    'item_component': 'div',
-    'item_indicator': {
-        'data-item-id': True
-    },
-    'title_indicator': 'span.lh-title',
-    'price_indicator': 'div.lh-copy',
-    'link_indicator': 'a'
-}
+# individual scrapers
+def scrape_walmart(query):
+    """Scrape Walmarts's api for data
+
+    Parameters
+    ----------
+    query: str
+        Item to look for in the api
+
+    Returns
+    ----------
+    items: list
+        List of items from the dict
+    """
+
+    api_url = 'https://api.bluecartapi.com/request'
+
+    page = '/s/' + query
+
+    params = {
+        'api_key': '4797C4706E1F456BBF55908317A04850',
+        'search_term': query,
+        'type': 'search'
+    }
+    
+
+    data = requests.get(api_url, params=params).json()
+
+    items = []
+    for p in data['search_results']:
+        item = {
+            'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
+            'title': formatTitle(p['product']['title']),
+            'price': '$' + str(p['offers']['primary']['price']),
+            'website': 'walmart',
+            'link': p['product']['link'],
+            'image': p['product']['main_image']
+        }
+        items.append(item)
+        
+    return items
 
 # idividual scrapper
 def scrape_amazon(query):
