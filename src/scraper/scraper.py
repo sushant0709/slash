@@ -4,7 +4,7 @@ import requests
 
 # local imports
 import scraper.formattr as form
-from scraper.configs import AMAZON, WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target
+from scraper.configs import WALMART, COSTCO, BESTBUY, scrape_ebay, scrape_target, scrape_amazon
 
 
 def httpsGet(URL):
@@ -105,7 +105,7 @@ def scrape(args, scrapers):
         if scraper == 'walmart':
             local = search(query, WALMART)
         elif scraper == 'amazon':
-            local = search(query, AMAZON)
+            local = scrape_amazon(query)
         elif scraper == 'target':
             local = scrape_target(query)
         elif scraper == 'ebay':
