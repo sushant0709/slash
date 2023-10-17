@@ -101,38 +101,32 @@ def scrape_target(query):
         List of items from the dict
     """
 
-    api_url = 'https://redsky.target.com/redsky_aggregations/v1/web/plp_search_v1'
+    api_url = 'https://api.redcircleapi.com/request'
 
     page = '/s/' + query
+    
     params = {
-        'key': 'ff457966e64d5e877fdbad070f276d18ecec4a01',
-        'channel': 'WEB',
-        'count': '24',
-        'default_purchasability_filter': 'false',
-        'include_sponsored': 'true',
-        'keyword': query,
-        'offset': '0',
-        'page': page,
-        'platform': 'desktop',
-        'pricing_store_id': '3991',
-        'useragent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0',
-        'visitor_id': 'AAA',
+    'api_key': '041ACFF13B1D4986A58C1F10CFA4D217',
+      'search_term': query,
+      'category_id': '5zja3',
+      'type': 'search'
     }
 
     data = requests.get(api_url, params=params).json()
 
     items = []
-    for p in data['data']['search']['products']:
+    for p in data['search_results']:
         item = {
             'timestamp': datetime.now().strftime("%d/%m/%Y %H:%M:%S"),
-            'title': formatTitle(p['item']['product_description']['title']),
-            'price': '$' + str(p['price']['current_retail']),
+            'title': formatTitle(p['product']['title']),
+            'price': '$' + str(p['offers']['primary']['price']),
             'website': 'target',
-            'link': p['item']['enrichment']['buy_url'],
+            'link': p['product']['link'],
         }
         items.append(item)
-
+        
     return items
+
 
 
 def scrape_ebay(query):
