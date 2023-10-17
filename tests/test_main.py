@@ -27,6 +27,7 @@ class TestMain(unittest.TestCase):
             'sort': 'pr' if order_by_col == 'price' else 'pr',
             'des': reverse,
             'num': 1
+            'src': ''
         }
 
         response = ['amazon', 'walmart', 'target', 'costco', 'bestbuy', 'ebay']
