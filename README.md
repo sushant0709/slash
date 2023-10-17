@@ -6,7 +6,7 @@
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![Github](https://img.shields.io/badge/language-node-red.svg)
 ![GitHub issues](https://img.shields.io/github/issues-raw/NCSU-Group70-CSC505-SE-Fall-23/slash)
-![Github closes issues](https://img.shields.io/github/issues-closed-raw/NCSU-Group7-SE2021/slash)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/NCSU-Group70-CSC505-SE-Fall-23/slash)
 ![Github pull requests](https://img.shields.io/github/issues-pr/NCSU-Group7-SE2021/slash)
 ![Github closed pull requests](https://img.shields.io/github/issues-pr-closed/NCSU-Group7-SE2021/slash)
 [![Node.js CI](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/node.js.yml/badge.svg)](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/node.js.yml)
