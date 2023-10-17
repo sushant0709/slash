@@ -1,8 +1,10 @@
 from os import link
 import unittest
+import sys
 
 from requests.models import Response
-from src.main import getFloatPrice, getItemInfoByItemName, getLowestHighestPriceByWebsite, getVarietyCountByWebsite
+sys.path.insert(0, '../src')
+from main import getFloatPrice, getItemInfoByItemName, getLowestHighestPriceByWebsite, getVarietyCountByWebsite
 
 
 class TestMain(unittest.TestCase):
