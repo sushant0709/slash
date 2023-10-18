@@ -174,12 +174,10 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 
 ## Phase 3 Team Members
 
-- [Rahul Kalita](https://github.com/rahulkalita8)
-- [Vignesh Muthukumar](https://github.com/vickymhs)
-- [Eshita Arza](https://github.com/ArzaEshita)
-- [Luis](https://github.com/lgdeloss)
-- [Isha Gupta](https://github.com/isha-bansal0115)
-- [Kiran Teja](https://github.com/kirantejatummuri)
+- [Chaitanya Srusti](https://github.com/ChaitanyaS182k)
+- [Nisarg Doshi](https://github.com/Nisarg20)
+- [Aniruddha Rajnekar](https://github.com/Aniruddha-Rajnekar)
+- [Mitesh Agarwal](https://github.com/mitesh24100)
 
 ## :email: Support
 
