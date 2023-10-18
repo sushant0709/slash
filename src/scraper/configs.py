@@ -195,7 +195,8 @@ def scrape_ebay(query):
             'title': formatTitle(p['title']),
             'price': '$' + p['sellingStatus']['currentPrice']['value'],
             'website': 'ebay',
-            'link': p['viewItemURL']
+            'link': p['viewItemURL'],
+            'image': p['galleryURL'],
         }
         items.append(item)
 
