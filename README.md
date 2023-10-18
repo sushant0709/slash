@@ -81,7 +81,7 @@ For the frontend setup ensure that [Node](https://nodejs.org/en/) is preinstalle
 
 ```
 cd client
-npm install
+npm install --legacy-peer-deps
 ```
 
 4. Once all the requirements are installed, you will have to `cd` into the `src` folder. Once in the `src` folder, use the python command to run the `main.py` file.
@@ -107,8 +107,7 @@ npm run start
 
 - FastAPI : https://fastapi.tiangolo.com
 - ASGI Server - Uvicorn : https://www.uvicorn.org
-- Docker : https://www.docker.com
-- Azure : https://azure.microsoft.com/en-us/
+
 
 ## :bulb: Use Case
 
@@ -119,9 +118,7 @@ npm run start
 
 ## Documentation
 
-Documentation can be accessed anytime via the below link.
 
-     `https://slash-app-staging.azurewebsites.net/`
 
 ## Search Items Api
 
@@ -151,13 +148,13 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 
 ## :page_facing_up: Why
 
-- In a market where we are spoilt for choices, we often look for the best deals.
-- The ubiquity of internet access has leveled the retail playing field, making it easy for individuals and businesses to sell products without geographic limitation. In 2020, U.S. e-commerce sales, receiving a boost due to the COVID-19 pandemic, grew 44% and represented more than 21% of total retail sales, according to e-commerce information source Internet Retailer.
-- The growth of e-commerce has not only changed the way customers shop, but also their expectations of how brands approach customer service, personalize communications, and provide customers choices.
-- E-commerce market has prompted cut throat competition amongst dealers, which is discernable through the price patterns for products of major market players. Price cuts are somewhat of a norm now and getting the best deal for your money can sometimes be a hassle (even while online shopping).
-- This is what Slash aims to reduce by giving you an easy to use, all in one place solution for finding the best deals for your products that major market dealers have to offer!
-- Slash in its current form is for students who wish to get the best deals out of every e-commerce site and can be used by anyone who is willing to develop an application that consumes these web APIs.
-- Future scope includes anything from a web application with a frontend or any Android or IOS application that utilises these Web APIs at their backend. Anyone can build their own custom application on top of these web APIs.
+- In an era of abundant choices, we constantly seek the finest deals. The widespread accessibility of the internet has democratized retail, enabling individuals and businesses to sell products without geographic constraints. In 2020, boosted by the COVID-19 pandemic, U.S. e-commerce sales surged by 44%, constituting more than 21% of total retail sales, as reported by Internet Retailer.
+
+-The evolution of e-commerce has not only transformed how customers shop but also elevated their expectations for personalized customer service, tailored communication, and diverse product offerings. The e-commerce landscape has incited fierce competition among retailers, evident in the pricing strategies employed by key market players. Frequent price reductions are now the norm, and finding the best value for your money can be challenging, even in the realm of online shopping.
+
+-This is where Slash steps in, offering a user-friendly, all-in-one solution for discovering the most appealing deals from major market retailers. Currently designed for students seeking optimal deals across various e-commerce platforms, Slash is adaptable for anyone interested in developing applications that harness these web APIs.
+
+-Future possibilities encompass the development of web applications with intuitive interfaces and mobile applications for Android and iOS, all powered by these web APIs. Anyone can construct their custom applications atop this foundation of web APIs.".
 
 ## :golf: Future Roadmap
 
@@ -169,7 +166,7 @@ Wrapper API to fetch slash scrape results. This API provides a one step solution
 
 # Team Members
 
-## Phase 3 Team Members
+## Phase 2 Team Members
 
 - [Chaitanya Srusti](https://github.com/ChaitanyaS182k)
 - [Nisarg Doshi](https://github.com/Nisarg20)
