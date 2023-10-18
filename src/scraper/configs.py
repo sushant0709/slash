@@ -141,8 +141,7 @@ def scrape_target(query):
     params = {
     'api_key': '041ACFF13B1D4986A58C1F10CFA4D217',
       'search_term': query,
-      'category_id': '5zja3',
-      'type': 'search'
+      'type': 'search',
     }
 
     data = requests.get(api_url, params=params).json()
