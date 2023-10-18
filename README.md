@@ -23,14 +23,11 @@ Slash, the openly accessible web API framework, empowers you to scour the top e-
 
 ---
 
-## :rocket: Improvements over Phase-II
+## :rocket: What new? 
+We have added a lot of new features to slash in our Phase-II.
 
-We have added a lot of new features to slash in our Phase-III.
-
-1. A web interface for users to interact with the application in a more native way.
-2. Charts and graphs for better visualization of the results.
-3. Analysis for price prediction of products.
-4. Analysis for variety count of products per e-commerce store.
+1. A web interface for users to interact with the application in a more personalised  way.
+2. Substituted web scraping with website product APIs for enhanced efficiency and speed.
 
 ---
 
