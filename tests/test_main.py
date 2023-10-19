@@ -32,7 +32,7 @@ class TestMain(unittest.TestCase):
             'src': ''
         }
 
-        response = ['amazon', 'walmart', 'target', 'costco', 'bestbuy']
+        response = ['amazon', 'walmart', 'target', 'costco', 'bestbuy', 'ebay']
 
         itemList = getItemInfoByItemName(args)
         for item in itemList:
