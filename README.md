@@ -40,7 +40,7 @@ We have added a lot of new features to slash in our Phase-II.
   ::
   <a href="#bulb-use-case">Use Case</a>
   ::
-  <a href="#file_cabinet-api">API</a>
+  <a href="#file_cabinet-api">APIs used in the Project</a>
   ::
   <a href="#page_facing_up-why">Why</a>
   ::
