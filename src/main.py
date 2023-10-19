@@ -228,8 +228,8 @@ def getItemInfoByItemName(args):
 
     scrapers = []
     scrapers.append('amazon')
-    scrapers.append('walmart')
-    scrapers.append('target')
+    #scrapers.append('walmart')
+    #scrapers.append('target')
     #scrapers.append('costco')
     scrapers.append('bestbuy')
     scrapers.append('ebay')
