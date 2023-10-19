@@ -114,36 +114,21 @@ npm run start
 - **_Students_**: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
 - **_Data Analysts_**: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
-## :file_cabinet: API
+## :file_cabinet: APIs used in the Project
 
-## Documentation
+Here are the APIs used in our project:
 
-## Search Items Api
+- **Amazon**: [Amazon API Documentation](https://www.rainforestapi.com/)
 
-Wrapper API to fetch slash scrape results. This API provides a one step solution to access scrape results from all our integrated websites.
+- **Walmart**: [Walmart API Documentation](https://www.bluecartapi.com/walmart-product-data-api)
 
-https://slash-app-staging.azurewebsites.net/{site}/{item_name}
+- **Target**: [Target API Documentation](https://www.redcircleapi.com/target-product-data-api)
 
-**Required parameters:**
+- **Ebay**: We used the Ebay SDK, which can be found in the project's requirements. Please refer to the SDK's official documentation for more information.
 
-- **site**: _az_ for amazon; _wm_ for walmart; _eb_ for ebay; _cc_ for costco; _tg_ for target and _bb_ for bustbuy. Alternatively '_all_' in site can be used to get results for all sites.
+  - **Ebay SDK Documentation**: [Ebay SDK Documentation](https://developer.ebay.com/support/kb-article?KBid=84)
 
-- **item_name**: items to be searched by slash web api; _examples below_
-
-`https://slash-app-staging.azurewebsites.net/az/toys`
-
-`https://slash-app-staging.azurewebsites.net/all/dell`
-
-**Optional parameters**
-
-- **relevant**: string relevance: items will be ordered by relevance. Not supported currently.
-- **order_by_col**: string column_name: items will be ordered by the column name. Currently only the 'price' column ordering is supported.
-- **reverse**: boolean val: items will be displayed in the same or the opposite order based on the value of this parameter.
-- **listLengthInd**: integer len(default value is 10): sets the upper limit on the number of entries that will be displayed
-- **export**: boolean val(default value is false): items can be exported in a csv file;; _examples below_
-
-`https://slash-app-staging.azurewebsites.net/all/dell?export=false&listLengthInd=5&order_by_col=price&reverse=false`
-
+Please refer to these API documentation links for details on how to use them in our project.
 ## :page_facing_up: Why
 
 - In an era of abundant choices, we constantly seek the finest deals. The widespread accessibility of the internet has democratized retail, enabling individuals and businesses to sell products without geographic constraints. In 2020, boosted by the COVID-19 pandemic, U.S. e-commerce sales surged by 44%, constituting more than 21% of total retail sales, as reported by Internet Retailer.
