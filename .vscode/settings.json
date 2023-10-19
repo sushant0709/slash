@@ -1,5 +1,11 @@
 {
-    "python.linting.flake8Enabled": true,
-    "python.linting.enabled": true,
-    "editor.formatOnSave": true
+    "python": {
+        "linting": {
+            "flake8Enabled": true,
+            "enabled": true
+        }
+    },
+    "editor": {
+        "formatOnSave": true
+    }
 }
