@@ -14,8 +14,8 @@ class TestMain(unittest.TestCase):
         Assert float price conversion
         """
 
-        assert getFloatPrice("price of the quantity is $200.384") == 200.384
-        assert getFloatPrice("$10.0$") == 10.0
+        assert getFloatPrice("price of the quantity is $365.54") == 365.54
+        assert getFloatPrice("$123.0$") == 123.0
         assert getFloatPrice("") == 0
     
     def test_getItemInfoByItemName(self):
