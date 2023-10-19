@@ -11,7 +11,7 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/NCSU-Group70-CSC505-SE-Fall-23/slash)
 [![Node.js CI](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/node.js.yml/badge.svg)](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/node.js.yml)
 [![Python Application](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/python-app.yml/badge.svg)](https://github.com/NCSU-Group7-SE2021/slash/actions/workflows/python-app.yml)
-[![codecov](https://codecov.io/gh/NCSU-Group7-SE2021/slash/branch/main/graph/badge.svg?token=E9TCZQ6NGF)](https://codecov.io/gh/NCSU-Group7-SE2021/slash)
+[![codecov](https://codecov.io/gh/ChaitanyaS182k/Slash/graph/badge.svg?token=4Y0UH6WSDZ)](https://codecov.io/gh/ChaitanyaS182k/Slash)
 
 On the hunt for incredible online deals? Meet Slash, your savvy shopping sidekick!
 
