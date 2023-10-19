@@ -29,6 +29,21 @@ We have added a lot of new features to slash in our Phase-II.
 1. A web interface for users to interact with the application in a more personalised way.
 2. Substituted web scraping with website product APIs for enhanced efficiency and speed.
 
+## :page_facing_up: Why
+
+1. **Anti-Web Scraping Measures**
+   - **Challenge**: Many popular websites, including Amazon and Walmart, employ anti-web scraping mechanisms, making it difficult to extract data using conventional scraping methods.
+
+2. **Transition to APIs**
+   - **Solution**: To overcome this challenge, we've transitioned from traditional web scraping in the backend to leveraging official APIs provided by these websites. This strategic shift not only preserves the project's core functionality but also enhances its robustness.
+
+3. **Enhanced Data Reliability**
+   - **Benefit**: APIs deliver data in a structured and reliable format, reducing the risk of unexpected data disruptions. In contrast, web scraping is vulnerable to frequent changes in website structure, which can break scraping scripts. This transition ensures more dependable and consistent data access.
+
+These changes have significantly improved the reliability and sustainability of data retrieval in our project.
+
+Future possibilities encompass the development of web applications with intuitive interfaces and mobile applications for Android and iOS, all powered by these web APIs. Anyone can construct their custom applications atop this foundation of web APIs.".
+
 ---
 
 <p align="center">
@@ -41,8 +56,6 @@ We have added a lot of new features to slash in our Phase-II.
   <a href="#bulb-use-case">Use Case</a>
   ::
   <a href="#file_cabinet-api">APIs used in the Project</a>
-  ::
-  <a href="#page_facing_up-why">Why</a>
   ::
   <a href="#golf-future-roadmap">Future Roadmap</a>
   ::
@@ -114,7 +127,7 @@ npm run start
 - **_Students_**: Students coming to university are generally on a budget and time constraint and generally spend hours wasting time to search for products on Websites. Slash is the perfect tool for these students that slashes all the unnecessary details on a website and helps them get prices for a product across multiple websites.Make the most of this tool in the upcoming Black Friday Sale.
 - **_Data Analysts_**: Finding data for any project is one of the most tedious job for a data analyst, and the datasets found might not be the most recent one. Using slash, they can create their own dataset in real time and format it as per their needs so that they can focus on what is actually inportant.
 
-## :file_cabinet: APIs used in the Project
+## :file_cabinet: API
 
 Here are the APIs used in our project:
 
@@ -129,15 +142,6 @@ Here are the APIs used in our project:
   - **Ebay SDK Documentation**: [Ebay SDK Documentation](https://developer.ebay.com/support/kb-article?KBid=84)
 
 Please refer to these API documentation links for details on how to use them in our project.
-## :page_facing_up: Why
-
-- In an era of abundant choices, we constantly seek the finest deals. The widespread accessibility of the internet has democratized retail, enabling individuals and businesses to sell products without geographic constraints. In 2020, boosted by the COVID-19 pandemic, U.S. e-commerce sales surged by 44%, constituting more than 21% of total retail sales, as reported by Internet Retailer.
-
--The evolution of e-commerce has not only transformed how customers shop but also elevated their expectations for personalized customer service, tailored communication, and diverse product offerings. The e-commerce landscape has incited fierce competition among retailers, evident in the pricing strategies employed by key market players. Frequent price reductions are now the norm, and finding the best value for your money can be challenging, even in the realm of online shopping.
-
--This is where Slash steps in, offering a user-friendly, all-in-one solution for discovering the most appealing deals from major market retailers. Currently designed for students seeking optimal deals across various e-commerce platforms, Slash is adaptable for anyone interested in developing applications that harness these web APIs.
-
--Future possibilities encompass the development of web applications with intuitive interfaces and mobile applications for Android and iOS, all powered by these web APIs. Anyone can construct their custom applications atop this foundation of web APIs.".
 
 ## :golf: Future Roadmap
 
