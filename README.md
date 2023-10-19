@@ -26,7 +26,7 @@ Slash, the openly accessible web API framework, empowers you to scour the top e-
 ## :rocket: What new? 
 We have added a lot of new features to slash in our Phase-II.
 
-1. A web interface for users to interact with the application in a more personalised  way.
+1. A web interface for users to interact with the application in a more personalised way.
 2. Substituted web scraping with website product APIs for enhanced efficiency and speed.
 
 ---
@@ -118,13 +118,11 @@ npm run start
 
 ## Documentation
 
-
-
 ## Search Items Api
 
 Wrapper API to fetch slash scrape results. This API provides a one step solution to access scrape results from all our integrated websites.
 
-    https://slash-app-staging.azurewebsites.net/{site}/{item_name}
+https://slash-app-staging.azurewebsites.net/{site}/{item_name}
 
 **Required parameters:**
 
