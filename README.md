@@ -198,4 +198,4 @@ Please refer to these API documentation links for details on how to use them in 
 
 ## :email: Support
 
-For any queries and help, please reach out to us at: SEslash007@gmail.com
+For any queries and help, please reach out to us at: ndoshi2@ncsu.edu
