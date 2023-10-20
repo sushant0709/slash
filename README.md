@@ -72,7 +72,7 @@ Future possibilities encompass the development of web applications with intuitiv
 ## :movie_camera: Checkout our video
 
 
-<p align="center"><img width="700" src="./assets/My Movie.gif"></p>
+<p align="center"><img width="300" src="./assets/My Movie.gif"></p>
 Also, you can watch the video demo of the Slash project here https://youtu.be/XH2iKbnvyMs.
 
 
