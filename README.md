@@ -90,7 +90,7 @@ git clone https://github.com/secheaper/slash.git
 cd slash
 ```
 
-2. This project uses Python 3 for the backend and React framework for the frontend.
+2. This project uses Python 3 for the backend and React along with Javascript framework for the frontend. This project employs MySQL Workbench to authenticate the users hitting on the frontend.
 
 For the backend setup ensure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All the python requirements of the project are listed in the `requirements.txt` file. Use pip to install all of those.
 
@@ -105,7 +105,24 @@ cd client
 npm install --legacy-peer-deps
 ```
 
-4. Once all the requirements are installed, you will have to `cd` into the `src` folder. Once in the `src` folder, use the python command to run the `main.py` file.
+For the login page setup, to install all the requirements which are listed in 'LoginPage/package.json' file. Use npm to install all of those.
+
+```
+cd LoginPage
+npm install --legacy-peer-deps
+```
+
+For MySQL Workbench setup, 
+Importing db schema
+   <p align="center"><img width="500" src="./assets/SQL_Dump.png"></p>
+Changing db credentials from services.js
+   <p align="center"><img width="500" src="./assets/dbChange.png"></p>
+Facing Issues?
+   Refer to the link below for resolution
+   https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server
+
+
+3. Once all the requirements are installed, you will have to `cd` into the `src` folder. Once in the `src` folder, use the python command to run the `main.py` file.
 
 ```
 cd src
@@ -117,18 +134,14 @@ For Windows
 python main.py
 ```
 
-5. Setting up the Database
-
-
-   
-
-
-6. Once the backend is up and running, you will have to `cd` into the `client` folder. Once in the `client` folder, use the node command to start the webserver.
+4. Once the backend is up and running, you will have to `cd` into the `LoginPage` folder. Once in the `LoginPage` folder, use the node command to start the webserver.
 
 ```
-cd client
-npm run start
+cd LoginPage
+node services.js
 ```
+
+5. Once the 
 
 ## :computer: Technology Used
 
