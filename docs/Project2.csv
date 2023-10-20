@@ -1,0 +1,103 @@
+Sr. No,Notes,Rating,Evidence/Comments/Links
+1,workload is spread over the whole team (one team member is often Xtimes more productive than the others...,3,Evidence in GitHub Comments(https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/graphs/contributors)
+2,"but nevertheless, here is a track record that everyone is contributing a lot)",3,https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/pulse
+3,Number of commits,3,110 commits made by team members evidence in GitHub(https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/commits/main)
+4,Number of commits: by different people,3,Each team member made around 25 commits each (https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/graphs/contributors)
+5,Issues reports: there were few,3,https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/issues
+6,issues are being closed,3,21 issues were closed in this project (https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/issues?q=is%3Aissue+is%3Aclosed)
+7,DOI badge: exists,3,Evidence in the Readme.md File in GitHub
+8,"Docs: doco generated , format not ugly",0,
+9,Docs: what: point descriptions of each class/function (in isolation),2,
+10,"Docs: how: for common use cases X,Y,Z mini-tutorials showing worked examples on how to do X,Y,Z",0,No evidence present in GitHub  Repo
+11,"Docs: why: docs tell a story, motivate the whole thing, deliver a punchline that makes you want to rush out and use the thing",3,Evidence present in the Why section of Readme.md GitHub
+12,"Docs: short video, animated, hosted on your repo. That convinces people why they want to work on your code.",2,"Video in the form of GIF. Not ideal as the video is almost a minute long and as it is in the form of gif, once a frame is passed we have to wait for a long time. (https://github.com/NCSU-Group7-SE2021/slash/blob/main/assets/slash-phase3.gif)"
+13,Use of version control tools,3,Git used throughout the Project
+14,Use of style checkers,2,
+15,Use of code formatters.,3,Evidence in multiple code snippets present across the Repo
+16,Use of syntax checkers.,2,
+17,Use of code coverage,3,https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/blob/main/.github/workflows/workflow.yml
+18,other automated analysis tools,3,https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/blob/main/.github/workflows/workflow.yml
+19,test cases exist,3,Present in the code base (https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/tree/main/tests)
+20,test cases are routinely executed,3,https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/blob/main/.github/workflows/python-app.yml
+21,the files CONTRIBUTING.md lists coding standards and lots of tips on how to extend the system without screwing things up,2,Needs more indepth explanation and more examples
+22,issues are discussed before they are closed,0,No such evidence
+23,Chat channel: exists,1,"mention of chat channel present in discord, but no evidence as such"
+24,test cases:.a large proportion of the issues related to handling failing cases.,2,Sufficiently enough proportion of issues related to handling the failing cases
+25,evidence that the whole team is using the same tools: everyone can get to all tools and files,3,"We can clearly see that entire codebase has been written in Python, JavaScript, HTML and CSS  in the languages section of the GitHub repo. "
+26,"evidence that the whole team is using the same tools (e.g. config files in the repo, updated by lots of different people)",3,Multiple commits on a single file by multiple people around the same time frame
+27,"evidence that the whole team is using the same tools (e.g. tutor can ask anyone to share screen, they demonstrate the system running on their computer)",3,"Hard to provide a concrete evidence, but all the members where actively commiting to the project."
+28,Evidence that the members of the team are working across multiple places in the code base,3,Evidence in GitHub (https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/graphs/contributors)
+29,short release cycles,3,Evident in the large number of commits in phases
+30,Documentation provides clear overview of software and uses,2,"Documentation does not provide an elaborate picture of the functionalities. Moreover there is one particular functionality, ""Results"",  that does not yet work but in visually represented in the project. The creators should have explicitly mentioned that the feature does not yet work or should have completly removed it from the UI"
+,Total score :- ,75/90,
+,,,
+,Metric ,,
+,What your Software does,,
+31,Website and documentation clearly describe the type of user who should use your software,Yes,
+32,Case studies to show how software is used by us,No,
+33,Project name unique,No,
+34,Project name free from trademark violations,Yes,
+35,Software available as a package that can be deployed without building it,No,
+36,Software available for free,Yes,
+37,"Source code publicly available to download, either as a downloadable bundle or via access to a source code repository",Yes,
+38,"Software hosted in an established, third-party repository likeGitHub (https://github.com)",Yes,
+39,Documentation clearly available within your software,Yes,
+40,"Documentation includes a ""quick start"" guide, that provides a short overview of how to use your software with some basic examples of use",Yes,
+41,"Providing more extensive documentation, that gives a clear, step-by-step instructions on how to deploy and use our software",Yes,
+42,"Comprehensive guide to all your softwareƒ??s commands, functions and options",Yes,
+43,Troubleshooting information that describes the symptoms and step-by-step solutions for problems and error messages,No,
+44,"If your software can be used as a library, package or service by other software, do you provide comprehensive API documentation",No,
+45,Documentation stored under revision control with source code,Yes,
+46,"Publishing the release history e.g. release data, version numbers, key features of each release etc. in your documentation",Yes,
+47,Software describes how a user can get help with using your software,Yes,
+48,Our documentation describes what support we provide to users and developers,Yes,
+49,Project has an e-mail address or forum that is solely for supporting users,No,
+50,E-mails to our support e-mail address are received by more than one person,No,
+51,Project have a ticketing system to manage bug reports and feature requests,No,
+52,"Project's ticketing system publicly visible to your users, so they can view bug reports and feature requests",N0,
+53,Softwareƒ??s architecture and design is modular,Yes,
+54,Software uses an accepted coding standard or convention,Yes,
+55,Software allows data to be imported and exported using open data formats,Yes,
+56,Software allows communications using open communications protocols,Yes,
+57,Software cross-platform compatible,Yes,
+58,Software adhere to appropriate accessibility conventions or standards,Yes,
+59,Documentation adheres to appropriate accessibility conventions or standards,Yes,
+60,Each source code releases a snapshot of the repository,No,
+61,Releases are tagged in the repository,Yes,
+62,There is a branch of the repository that is always stable,Yes,
+63,Back-up your repository,Yes,
+64,Provide publicly available instructions for building the software from the source code,Yes,
+65,"Build, or package, the software using an automated tool",No,
+66,Provide publicly-available instructions for deploying the software,Yes,
+67,Documentation list all third-party dependencies,Yes,
+68,Documentation lists the version number for all third-party dependencies,Yes,
+69,"Software list the web address, and licences for all third-party dependencies and say whether the dependencies are mandatory or optional",Yes,
+70,Download dependencies using a dependency management tool or package manager,Yes,
+71,Tests that can be run after your software has been built or deployed to show whether the build or deployment has been successful,Yes,
+72,Automated test suite for your software,No,
+73,Framework to periodically (e.g. nightly) run your tests on the latest version of the source code,No,
+74,"Using continuous integration, automatically running tests whenever changes are made to your source code",Yes,
+75,Test results publicly visible,Yes,
+76,Manually-run tests documented,Yes,
+77,"Project has resources (e.g. blog, Twitter, RSS feed, Facebook page, wiki, mailing list) that are regularly updated with information about your software",No,
+78,Documentation states how many projects and users are associated with your project,Yes,
+79,Provide success stories on your website,No,
+80,Listing the important partners and collaborators in our documentation,Yes,
+81,Listing the project's publications on our website or link to a resource where these are available,Yes,
+82,Listing third-party publications that refer to the software on our website or link to a resource where these are available,Yes,
+83,Users can subscribe to notifications to changes to your source code repository,No,
+84,"Since the software is developed as an open source project (and, not just a project developing open source software), do we have a governance model",No,
+85,"Do we accept contributions (e.g. bug fixes, enhancements, documentation updates, tutorials) from people who are not part of your project?",Yes,
+86,Do you have a contributions policy,Yes,
+87,Is your contributions' policy publicly available?,Yes,
+88,Do contributors keep the copyright/IP of their contributions,Yes,
+89,Website and documentation clearly states the copyright owners of your software and documentation,Yes,
+90,Do each of your source code files include a copyright statement,No,
+91,The website and documentation clearly state the licence of your software,Yes,
+92,Software released under an open source licence,Yes,
+93,Software released under an OSI-approved open-source licence,Yes,
+94,Source code files include a licence header,Yes,
+95,Recommended citation for your software,Yes,
+96,"Documentation includes a project roadmap (a list of project and development milestones for the next 3, 6 months)",Yes,
+97,"Documentation describe how the project is funded, and the period over which funding is guaranteed?",No,
+98,"Do you make timely announcements of the deprecation of components, APIs, etc.",No,
