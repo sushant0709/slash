@@ -141,7 +141,6 @@ cd LoginPage
 node services.js
 ```
 
-5. Once the 
 
 ## :computer: Technology Used
 
