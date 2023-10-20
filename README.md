@@ -109,7 +109,10 @@ For the login page setup, to install all the requirements which are listed in 'L
 
 ```
 cd LoginPage
-npm install --legacy-peer-deps
+npm install express
+npm install mysql
+npm install cors
+npm install nodemon
 ```
 
 For MySQL Workbench setup, 
@@ -138,7 +141,9 @@ python main.py
 
 ```
 cd LoginPage
-node services.js
+nodemon services.js
+
+Open Login.html in the web browser
 ```
 
 
