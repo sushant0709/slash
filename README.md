@@ -70,9 +70,9 @@ Future possibilities encompass the development of web applications with intuitiv
 ---
 
 ## :movie_camera: Checkout our video
+https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/assets/70905787/fe229f61-2bec-4920-96f4-6b693a468bcf
 
 
-<p align="center"><img width="300" src="./assets/My Movie.gif"></p>
 Also, you can watch the video demo of the Slash project here https://youtu.be/XH2iKbnvyMs.
 
 
