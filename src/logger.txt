@@ -1,0 +1,336 @@
+amazon query:caps
+amazon query:telephones
+amazon query:mouse
+amazon query:hershey
+amazon query:cadbury
+amazon query:cadbury
+amazon query:cadbury
+amazon query:dell
+amazon query:dell
+all query:dell
+all query:s
+all query:dell
+all query:dell
+all query:dell
+all query:dell
+all query:dell
+all query:dell
+all query:lenovo
+all query:dell
+all query:dell
+amazon query:dell
+az query:dell
+null query:dell
+az query:dell
+wm query:dell
+bb query:dell
+cc query:dell
+tg query:dell
+eb query:dell
+bb query:dell
+all query:dell
+az query:Airpods Pro
+az query:Airpods Pro
+wm query:Airpods Pro
+all query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+tg query:Airpods Pro
+cc query:Airpods Pro
+eb query:Airpods Pro
+wm query:Airpods Pro
+wm query:Brita
+bb query:Airpods Pro
+az query:Airpods Pro
+az query:Brita
+bb query:Brita
+tg query:Brita
+tg query:Airpods Pro
+tg query:Brita
+tg query:Brita
+tg query:Airpods Pro
+bb query:Airpods Pro
+tg query:Airpods Pro
+tg query:Airpods Pro
+tg query:Airpods Pro
+tg query:Airpods Pro
+tg query:Highligher Pens
+tg query:Airpods Pro
+tg query:Brita
+wm query:Brita
+eb query:Airpods Pro
+cc query:Brita
+bb query:Airpods Pro
+bb query:Brita
+eb query:Brita
+eb query:Brita
+cc query:Brita
+az query:Airpods Pro
+wm query:Airpods Pro
+az query:Airpods Pro
+az query:Airpods Pro
+az query:Airpods Pro
+az query:Airpods Pro
+bb query:apple
+az query:Brita
+az query:Airpods Pro
+az query:Airpods Pro
+bb query:Airpods Pro
+bb query:undefined
+bb query:Brita
+bb query:Airpods Pro
+bb query:Brita
+bb query:Shoes
+az query:Airpods Pro
+az query:Airpods Pro
+bb query:Airpods Pro
+bb query:Shoes
+bb query:Shoes
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+wm query:Airpods Pro
+wm query:Shoes
+wm query:Brita
+cc query:furniture
+cc query:Brita
+cc query:Fridges
+cc query:Airpods Pro
+az query:Airpods Pro
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+tg query:Airpods Pro
+cc query:Shoes
+cc query:Shoes
+all query:Shoes
+az query:Shoes
+az query:Shoes
+wm query:Airpods Pro
+eb query:Brita
+tg query:vibrator
+all query:Can opener
+az query:Can opener
+bb query:Airpods Pro
+cc query:Brita
+az query:Airpods Pro 2
+az query:Airpods Pro 2nd generation
+wm query:Airpods Pro
+eb query:Brita
+cc query:Airpods Pro
+tg query:Airpods Pro
+bb query:Airpods Pro
+bb query:Iphone
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Shoes
+az query:Airpods Pro
+az query:Shoes
+az query:Shoes
+bb query:Airpods Pro
+bb query:Iphone
+bb query:Iphone
+bb query:Iphone
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+bb query:Airpods Pro
+az query:Airpods Pro
+bb query:Airpods Pro
+bb query:apple
+bb query:apple
+bb query:Brita
+bb query:Airpods Pro
+bb query:apple
+bb query:apple
+bb query:apple
+bb query:apple
+bb query:apple
+bb query:apple
+bb query:apple
+bb query:apple
+cc query:apple
+cc query:airpods
+cc query:Airpods Pro
+all query:apple
+tg query:apple
+tg query:highligher pens
+tg query:highligher pens
+eb query:apple
+eb query:apple
+eb query:Brita
+wm query:Brita
+wm query:Brita
+all query:Brita
+tg query:Brita
+tg query:apple
+tg query:highligher pens
+tg query:Brita
+tg query:Brita
+tg query:Brita
+all query:Brita
+bb query:Brita
+bb query:Brita
+bb query:airpods pro
+az query:Shoes
+az query:Shoes
+wm query:Shoes
+thd query:chair
+wm query:Shoes
+thd query:chair
+thd query:chair
+thd query:chair
+thd query:chair
+cc query:chair
+bb query:chair
+bb query:chair
+thd query:chair
+thd query:chair
+thd query:chair
+thd query:chair
+thd query:chair
+thd query:chair
+az query:chair
+wm query:chair
+eb query:chair
+cc query:chair
+tg query:chair
+tg query:chair
+tg query:chair
+bb query:chair
+thd query:chair
+thd query:sofa
+thd query:chair
+bb query:Codom
+bb query:Camera
+tg query:Airpods Pro
+tg query:Airpods Pro
+tg query:Airpods Pro
+tg query:Brita
+tg query:Airpods Pro
+az query:chair
+wm query:Shoes
+wm query:Shoes
+bb query:Brita
+tg query:chair
+thd query:chair
+az query:chair
+wm query:chair
+eb query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+thd query:chair
+tg query:chair
+tg query:chair
+bb query:chair
+cc query:chair
+cc query:chair
+bb query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+bb query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+bb query:chair
+bb query:chair
+bb query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:shoes
+cc query:Shoes
+cc query:Shoes
+cc query:chair
+cc query:chair
+bb query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+cc query:chair
+all query:chair
+az query:chair
+thd query:chair
+az query:chair
+thd query:chair
+thd query:Table
+az query:Table
+thd query:table
+thd query:chair
+thd query:apple
+thd query:Shoes
+thd query:Shoes
+bb query:Shoes
+bb query:shoes
+bb query:Shoes
+bb query:shoes
+bb query:shoes
+bb query:shoes
+bb query:shoes
+bb query:shoes
+bb query:shoes
+bb query:iPhone
+cc query:Airtags
+cc query:Airtags
+bb query:Airtags
+tg query:Airtags
+tg query:Airtags
+tg query:Airtags
+tg query:Airtags
+az query:iPhone
+wm query:Cereals
+eb query:iPhone
+eb query:iPhone
+bb query:iPhone
+eb query:iPhone
+thd query:table
+all query:pens
+all query:pens
