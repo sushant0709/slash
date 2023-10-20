@@ -1,4 +1,4 @@
-|Score|Notes| Evidence|
+|Score(0,1,2,3)|Notes| Evidence|
 |-|-----|---------|
 |.5| short release cycles|We had multiple releases, as well tested different components iteratively|
 |.5| workload is spread over the whole team (so one team member is often Xtimes more productive than the others...| Despite the commit count difference, workload was spread evenly|
