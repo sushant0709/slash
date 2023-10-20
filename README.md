@@ -164,6 +164,8 @@ Here are the APIs used in our project:
 
 - **Target**: [Target API Documentation](https://www.redcircleapi.com/target-product-data-api)
 
+- **The Home Depot**: [The Home Depot API Documentation](https://www.bigboxapi.com/)
+
 - **Ebay**: We used the Ebay SDK, which can be found in the project's requirements. Please refer to the SDK's official documentation for more information.
 
   - **Ebay SDK Documentation**: [Ebay SDK Documentation](https://developer.ebay.com/support/kb-article?KBid=84)
