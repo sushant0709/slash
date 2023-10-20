@@ -73,7 +73,7 @@ Future possibilities encompass the development of web applications with intuitiv
 
 
 <p align="center"><img width="700" src="./assets/slash-phase3.gif"></p>
-Also, you can watch the video demo of the Slash project here https://youtu.be/ThGPjUc6WHU.
+Also, you can watch the video demo of the Slash project here https://youtu.be/XH2iKbnvyMs.
 
 
 ---
