@@ -123,9 +123,10 @@ Importing db schema
    <p align="center"><img width="500" src="./assets/SQL_Dump.png"></p>
 Changing db credentials from services.js
    <p align="center"><img width="500" src="./assets/dbChange.png"></p>
+
 Facing Issues?
-   Refer to the link below for resolution
-   https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server
+Refer to the this [Stack Overflow](https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server) Link resolution
+   
 
 
 3. Once all the requirements are installed, you will have to `cd` into the `src` folder. Once in the `src` folder, use the python command to run the `main.py` file.
