@@ -57,7 +57,7 @@ def scrape_amazon(query):
     page = '/s/' + query
 
     params = {
-    'api_key': 'ED96ABDD2E0145E1A2E2ABFCEF0A894E',
+    'api_key': 'C924DF09E62D40F0A320D1585F0799AB',
     'type': 'search',
     'amazon_domain': 'amazon.com',
     'search_term': query,
@@ -104,7 +104,7 @@ def scrape_walmart(query):
     page = '/s/' + query
 
     params = {
-        'api_key': '924E6940486740DAB0E735363D8ED199',
+        'api_key': 'F61424B8739B45169C117DFBCEA5C5BB',
         'search_term': query,
         'type': 'search'
     }
@@ -234,7 +234,7 @@ def scrape_homedepot(query):
     """
 
     params = {
-    'api_key': 'E4FF3BE4CDE146E8B9A00C2BC657F953',
+    'api_key': '4231AED3DC3D46E8AB3DE7264AD44BDF',
     'search_term': query,
     'type': 'search'
     }
