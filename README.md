@@ -10,6 +10,7 @@
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/NCSU-Group70-CSC505-SE-Fall-23/slash)
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/NCSU-Group70-CSC505-SE-Fall-23/slash)
 ![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/NCSU-Group70-CSC505-SE-Fall-23/slash)
+![GitHub repo size](https://img.shields.io/github/repo-size/NCSU-Group70-CSC505-SE-Fall-23/slash)
 [![codecov](https://codecov.io/gh/ChaitanyaS182k/Slash/graph/badge.svg?token=4Y0UH6WSDZ)](https://codecov.io/gh/ChaitanyaS182k/Slash)
 
 On the hunt for incredible online deals? Meet Slash, your savvy shopping sidekick!
