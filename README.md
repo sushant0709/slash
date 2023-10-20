@@ -80,7 +80,7 @@ Also, you can watch the video demo of the Slash project with audio explanation h
 
 ## : Requirements
 1. [Visual Studio Code](https://code.visualstudio.com/download)
-2. Python 3.7 and above
+2. [Python 3.7 and above](https://www.python.org/downloads/)
 3. [Node.js](https://nodejs.dev/en/download/) and NPM
 4. [MySQL Workbench](https://dev.mysql.com/downloads/mysql/)
 
