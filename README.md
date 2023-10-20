@@ -23,7 +23,7 @@ Slash, the openly accessible web API framework, empowers you to scour the top e-
 
 ---
 
-## :rocket: What new? 
+## :rocket: What's new? 
 We have added a lot of new features to slash in our Phase-II.
 
 1. A web interface for users to interact with the application in a more personalised way.
@@ -75,6 +75,12 @@ Future possibilities encompass the development of web applications with intuitiv
 
 ---
 
+## : Requirements
+1. [Visual Studio Code](https://code.visualstudio.com/download)
+2. Python 3.7 and above
+3. [Node.js](https://nodejs.dev/en/download/) and NPM
+4. [MySQL Workbench](https://dev.mysql.com/downloads/mysql/)
+
 ## :rocket: Installation
 
 1. Clone the Github repository to a desired location on your computer. You will need [git](https://git-scm.com/) to be preinstalled on your machine. Once the repository is cloned, you will then `cd` into the local repository.
@@ -111,7 +117,13 @@ For Windows
 python main.py
 ```
 
-5. Once the backend is up and running, you will have to `cd` into the `client` folder. Once in the `client` folder, use the node command to start the webserver.
+5. Setting up the Database
+
+
+   
+
+
+6. Once the backend is up and running, you will have to `cd` into the `client` folder. Once in the `client` folder, use the node command to start the webserver.
 
 ```
 cd client
