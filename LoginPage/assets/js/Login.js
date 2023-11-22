@@ -13,7 +13,7 @@ const login_button = document.getElementById('login_button')
 getUserData();
 temp_getUserData_db = [] 
 async function getUserData() {
-  const get_url = 'http://127.0.0.1:5000/getUserData'
+  const get_url = 'http://127.0.0.1:3002/getUserData'
   const response = await fetch(get_url);
   const data = await response.json();
   temp_getUserData_db = data
@@ -46,7 +46,7 @@ register.addEventListener('click', () =>{
 
 	if(userId_value.length >= 10 && userId_value.includes("@") && userId_value.includes(".com") && pass_value.length >= 8 && pass_value === cnf_pass_value){
 		var xhttp = new XMLHttpRequest();
-		xhttp.open('POST', "http://127.0.0.1:5000/SignUp", true);
+		xhttp.open('POST', "http://127.0.0.1:3002/SignUp", true);
 		xhttp.setRequestHeader('Content-type', "application/json;charset=UTF-8");
 		let send = {user_id: userId.value, password: pass.value};
 		var sendString = JSON.stringify(send);
@@ -65,14 +65,14 @@ login_button.addEventListener('click', (e) => {
 	for(let i=0; i<temp_getUserData_db.length; i++){
 		if(temp_getUserData_db[i][0] === login_id_value && temp_getUserData_db[i][1] === login_password_value){
 			var xhttp2 = new XMLHttpRequest();
-			xhttp2.open('POST', "http://127.0.0.1:5000/activeUser", true);
+			xhttp2.open('POST', "http://127.0.0.1:3002/activeUser", true);
 			xhttp2.setRequestHeader('Content-type', "application/json;charset=UTF-8");
 			let send_data = {id: temp_getUserData_db[i][2]};
 			var sendString_data = JSON.stringify(send_data);
 			xhttp2.send(sendString_data);
 
 			var xhttp = new XMLHttpRequest();
-			xhttp.open('POST', "http://127.0.0.1:5000/Redirect", true);
+			xhttp.open('POST', "http://127.0.0.1:3002/Redirect", true);
 			xhttp.setRequestHeader('Content-type', "application/json;charset=UTF-8");
 			let send = {post: "True"};
 			var sendString = JSON.stringify(send);
