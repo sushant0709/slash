@@ -43,6 +43,10 @@ app = FastAPI()
 
 origins = [
     "http://localhost:3000",
+    "https://slash-qn6c.onrender.com:3000",
+    "https://slash-qn6c.onrender.com:3000/",
+    "https://slash-qn6c.onrender.com",
+    "https://slash-qn6c.onrender.com/"
 ]
 
 app.add_middleware(
