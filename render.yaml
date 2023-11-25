@@ -1,0 +1,10 @@
+services:
+  - name: login-page
+    buildCommand: npm install
+    startCommand: node "LoginPage/services.js"
+  - name: react-frontend
+    buildCommand: npm install
+    startCommand: npm start
+  - name: python-backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: python "src/main.py"
