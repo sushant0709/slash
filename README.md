@@ -74,7 +74,7 @@ Future possibilities encompass the development of web applications with intuitiv
 ---
 
 ## :movie_camera: Checkout our video
-https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/assets/70905787/fe229f61-2bec-4920-96f4-6b693a468bcf
+https://www.youtube.com/watch?v=CKobC_gyfBg
 
 
 
