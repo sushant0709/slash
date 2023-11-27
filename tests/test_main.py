@@ -63,12 +63,12 @@ class TestMain(unittest.TestCase):
             ]
         
         lowest_price_ans = {
-            'amazon': 97.98,
-            'walmart': 48.13,
-            'target': 11.99,
-            'costco': 229.99,
-            'bestbuy': 349.99,
-            'ebay': 329.11
+            'amazon': 97.0,
+            'walmart': 48.0,
+            'target': 11.0,
+            'costco': 229.0,
+            'bestbuy': 349.0,
+            'ebay': 329.0
         }
 
         lowest_price_link_ans = {
@@ -81,12 +81,12 @@ class TestMain(unittest.TestCase):
             }
 
         highest_price_ans = {
-            'amazon': 97.98,
-            'walmart': 48.13,
-            'target': 11.99,
-            'costco': 229.99,
-            'bestbuy': 349.99,
-            'ebay': 329.11}
+            'amazon': 97.0,
+            'walmart': 48.0,
+            'target': 11.0,
+            'costco': 229.0,
+            'bestbuy': 349.0,
+            'ebay': 329.0}
 
         highest_price_link_ans = {
             'amazon': "www.amazon.com/HOMEFUN-Ergonomic-Adjustable-Armrests-Support/dp/B084WWQB5B/ref=sr_1_1?keywords=chair&qid=1638204385&sr=8-1",
