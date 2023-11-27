@@ -23,7 +23,7 @@ Slash, the openly accessible web API framework, empowers you to scour the top e-
 - **User-Friendly**: Slash offers user-friendly public APIs for effortlessly filtering, sorting, and searching through search results.
 - **Versatile**: It generates JSON responses that you can easily tailor to achieve the specific outcomes you want.
 
-## :fire: **Rubrics and video link present in Project 3 Rubrics folder in Project 3.md file**
+## :fire: **Rubrics and video link present in Project 3 Rubrics folder in Project 3 Rubrics.md file**
 
 ---
 
