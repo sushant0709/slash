@@ -7,12 +7,12 @@ Rubrics and video link present in Project 3 Rubrics folder in Project 3.md file
 [![DOI](https://zenodo.org/badge/431326985.svg)](https://zenodo.org/badge/latestdoi/431326985)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
 ![Github](https://img.shields.io/badge/language-node-red.svg)
-![GitHub issues](https://img.shields.io/github/issues-raw/NCSU-Group70-CSC505-SE-Fall-23/slash)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/NCSU-Group70-CSC505-SE-Fall-23/slash)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/NCSU-Group70-CSC505-SE-Fall-23/slash)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/NCSU-Group70-CSC505-SE-Fall-23/slash)
-![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/w/NCSU-Group70-CSC505-SE-Fall-23/slash)
-![GitHub repo size](https://img.shields.io/github/repo-size/NCSU-Group70-CSC505-SE-Fall-23/slash)
+![GitHub issues](https://img.shields.io/github/issues/sushant0709/slash)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/sushant0709/slash)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/sushant0709/slash)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/sushant0709/slash)
+![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/m/sushant0709/slash/main)
+![GitHub repo size](https://img.shields.io/github/repo-size/sushant0709/slash)
 [![codecov](https://codecov.io/gh/ChaitanyaS182k/Slash/graph/badge.svg?token=4Y0UH6WSDZ)](https://codecov.io/gh/ChaitanyaS182k/Slash)
 
 On the hunt for incredible online deals? Meet Slash, your savvy shopping sidekick!
