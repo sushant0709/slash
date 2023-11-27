@@ -82,7 +82,6 @@ These Contributing guidelines are adapted from the [Atom's](https://github.com/a
 ## 💻 Contributors
 
 ### Phase 2 Team Members
-* [Nisarg](https://github.com/nisarg20)
-* [Aniruddha Rajnekar](https://github.com/Aniruddha-Rajnekar)
-* [Chaitanya Srusti](https://github.com/ChaitanyaS182K)
-* [Mitesh Agarwal](https://github.com/Mitesh24100)
+* Anshul Anil Khairnar
+* Sushant Khattar
+* Parth Kulkarni
