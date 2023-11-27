@@ -26,7 +26,7 @@ def test_sortList():
     assert formatter.sortList(arr, "pr", False) == ansArr
     assert formatter.sortList(arr, "pr", True) == revAnsArr
 
-def test_formatResults():
+def test_formatResults(name, titles, prices, links, images, ratings):
     """
     Checks the formatResults function
     """
@@ -35,7 +35,7 @@ def test_formatResults():
     links = []
     images = []
 
-    product = formatter.formatResult("example", titles, prices, links, images)
+    product = formatter.formatResult("example", titles, prices, links, images, ratings)
     ans = {"title":"title", "price":"$0.99", "website":"example"}
 
     assert product["title"] == ans["title"] and product["price"] == ans["price"] and product["website"] == ans["website"]

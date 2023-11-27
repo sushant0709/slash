@@ -15,9 +15,9 @@ class SearchPage extends StatefulWidget {
 class _SearchPageState extends State<SearchPage> {
   List<DropdownMenuItem<String>> get dropdownItems {
     List<DropdownMenuItem<String>> menuItems = [
-      const DropdownMenuItem(child: Text("CostCo"), value: "costco"),
-      const DropdownMenuItem(child: Text("Ebay"), value: "ebay"),
-      const DropdownMenuItem(child: Text("Walmart"), value: "walmart"),
+      const DropdownMenuItem(value: "costco", child: Text("CostCo")),
+      const DropdownMenuItem(value: "ebay", child: Text("Ebay")),
+      const DropdownMenuItem(value: "walmart", child: Text("Walmart")),
     ];
     return menuItems;
   }
@@ -57,7 +57,7 @@ class _SearchPageState extends State<SearchPage> {
               });
             },
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           TextField(
             controller: _textController,
             textCapitalization: TextCapitalization.sentences,
@@ -69,7 +69,7 @@ class _SearchPageState extends State<SearchPage> {
             }),
             decoration: InputDecoration(
               hintText: 'Search Products...',
-              hintStyle: TextStyle(color: Colors.black),
+              hintStyle: const TextStyle(color: Colors.black),
               suffixIcon: IconButton(
                 onPressed: () {
                   _textController.clear();
@@ -77,10 +77,10 @@ class _SearchPageState extends State<SearchPage> {
                 icon: Icon(selectedIcon),
               ),
               border: InputBorder.none,
-              contentPadding: EdgeInsets.all(15),
+              contentPadding: const EdgeInsets.all(15),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Container(
             height: mediaQuery.size.height / 15,
             width: mediaQuery.size.width / 5,
@@ -120,12 +120,12 @@ class _SearchPageState extends State<SearchPage> {
               child: ListView(
                 children: [
                   ListTile(
-                    title: Text('Search Product'),
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=> SearchPage())),
+                    title: const Text('Search Product'),
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=> const SearchPage())),
                   ),
                   ListTile(
-                    title: Text('Graphs'),
-                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=> GraphPage())),
+                    title: const Text('Graphs'),
+                    onTap: () => Navigator.push(context, MaterialPageRoute(builder: (context)=> const GraphPage())),
                   ),
                 ],
               ),

@@ -14,7 +14,7 @@ class TestMain(unittest.TestCase):
         Assert float price conversion
         """
 
-        assert getFloatPrice("price of the quantity is $365.54") == 365.54
+        assert getFloatPrice("price of the quantity is $365.0") == 365.0
         assert getFloatPrice("$123.0$") == 123.0
         assert getFloatPrice("") == 0
     

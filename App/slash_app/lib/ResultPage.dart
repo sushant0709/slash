@@ -8,7 +8,7 @@ class ResultPage extends StatefulWidget {
   final String selectedValue;
   final String searchText;
 
-  ResultPage(this.selectedValue, this.searchText);
+  const ResultPage(this.selectedValue, this.searchText, {super.key});
 
   @override
   _ResultPageState createState() => _ResultPageState();
@@ -32,9 +32,9 @@ class _ResultPageState extends State<ResultPage> {
     dom.Document html = dom.Document.html(response.body);
 
     var titles = [];
-    var prices;
-    var urls;
-    var urlImages;
+    List<String> prices;
+    List<String> urls;
+    List<String> urlImages;
 
     switch (widget.selectedValue) {
       case 'costco':
@@ -156,7 +156,7 @@ class _ResultPageState extends State<ResultPage> {
           title: titles[index],
           price: prices[index],
           url: urls[index],
-          imageUrl: urlImages[index]!,
+          imageUrl: urlImages[index],
         ),
       );
     });
@@ -166,11 +166,11 @@ class _ResultPageState extends State<ResultPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Search Results'),
+        title: const Text('Search Results'),
         centerTitle: true,
       ),
       body: ListView.builder(
-        padding: EdgeInsets.all(10),
+        padding: const EdgeInsets.all(10),
         itemCount: searchResults.length,
         itemBuilder: (context, index) {
           return InkWell(
@@ -185,10 +185,10 @@ class _ResultPageState extends State<ResultPage> {
               ),
               title: Text(
                 searchResults[index].title,
-                style: TextStyle(fontSize: 10),
+                style: const TextStyle(fontSize: 10),
               ),
               subtitle: Text('\$${searchResults[index].price}',
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
+                  style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 20)),
             ),
           );
         },
