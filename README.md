@@ -77,7 +77,6 @@ Future possibilities encompass the development of web applications with intuitiv
 https://github.com/NCSU-Group70-CSC505-SE-Fall-23/slash/assets/70905787/fe229f61-2bec-4920-96f4-6b693a468bcf
 
 
-Also, you can watch the video demo of the Slash project with audio explanation here https://youtu.be/XH2iKbnvyMs.
 
 
 ---
