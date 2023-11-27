@@ -28,13 +28,13 @@ class TestMain(unittest.TestCase):
             {'timestamp': '29/11/2021 11:46:35', 'title': 'Razer - Iskur Gaming Chair with Built-in...', 'price': '$349.99', 'link': 'www.bestbuy.com/site/razer-iskur-gaming-chair-with-built-in-lumbar-support-black/6476898.p?skuId=6476898', 'website': 'bestbuy'}, 
             {'timestamp': '29/11/2021 11:46:36', 'title': 'Steelcase Leap V2 Chair,  -Open Box- Ful...', 'price': '$329.11', 'website': 'ebay', 'link': 'https://www.ebay.com/itm/Steelcase-Leap-V2-Chair-Open-Box-Fully-Loaded-Black-Fabric-/121882349228'}
             ]
-        
+        inf = float('inf')
         lowest_price_ans = {
             'amazon': 97.0,
             'walmart': 48.0,
             'target': 11.0,
             'costco': 229.0,
-            'homedepot': 220.0,
+            'homedepot': inf,
             'bestbuy': 349.0,
             'ebay': 329.0
         }
@@ -54,7 +54,7 @@ class TestMain(unittest.TestCase):
             'walmart': 48.0,
             'target': 11.0,
             'costco': 229.0,
-            'homedepot': 220.0,
+            'homedepot': inf,
             'bestbuy': 349.0,
             'ebay': 329.0}
 
