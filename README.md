@@ -1,6 +1,6 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
-Rubrics and video link present in Project 3 Rubrics folder in Project 3.md file
+
 
 ![GitHub](https://img.shields.io/github/license/sushant0709/slash)
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg)
@@ -22,6 +22,8 @@ Slash, the openly accessible web API framework, empowers you to scour the top e-
 - **Efficient**: Slash streamlines the deal comparison process, potentially saving you more than 50% of your valuable time.
 - **User-Friendly**: Slash offers user-friendly public APIs for effortlessly filtering, sorting, and searching through search results.
 - **Versatile**: It generates JSON responses that you can easily tailor to achieve the specific outcomes you want.
+
+**Rubrics and video link present in Project 3 Rubrics folder in Project 3.md file**
 
 ---
 
