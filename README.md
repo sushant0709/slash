@@ -1,5 +1,7 @@
 <p align="center"><img width="500" src="./assets/slash.png"></p>
 
+Rubrics and video link present in Project 3 Rubrics folder in Project 3.md file
+
 ![GitHub](https://img.shields.io/github/license/sushant0709/slash)
 ![github workflow](https://github.com/secheaper/cheaper/actions/workflows/python-app.yml/badge.svg)
 [![DOI](https://zenodo.org/badge/431326985.svg)](https://zenodo.org/badge/latestdoi/431326985)
