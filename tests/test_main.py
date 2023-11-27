@@ -34,7 +34,7 @@ class TestMain(unittest.TestCase):
             'walmart': 48.0,
             'target': 11.0,
             'costco': 229.0,
-            'homedepot': inf or 0,
+            'homedepot': inf,
             'bestbuy': 349.0,
             'ebay': 329.0
         }
@@ -44,7 +44,7 @@ class TestMain(unittest.TestCase):
             'walmart': "www.walmart.comhttps://wrd.walmart.com/track?pltfm=desktop&tax=4044_103150_97116_91853&rdf=1&plmt=sp-search-middle~desktop~&eventST=click&spQs=apqgqDEG00Gk_QH7Y98s-tvzD2GJBtYRHuyrCs-NV8UWvHysqbYcLsclYVXrTItsxT99dj59OB3kUD_JhC3RyHy-pCq4J6WjLiQcT_qrqQA&pos=1&pgId=chair&bt=1&adUid=ZavTQ7x_M1eGlAtdVKJy6__X2-ZoZz6XZJJn&storeId=1372&mloc=sp-search-middle&pt=search&rd=https%3A%2F%2Fwww.walmart.com%2Fip%2FBig-Joe-Milano-Bean-Bag-Chair-Blue%2F51744431%3Fathbdg%3DL1800",
             'target': "https://www.target.com/p/steel-folding-chair-black-pdg/-/A-14777780",
             'costco': "https://www.costco.com/respawn-gaming-chair.product.100388800.html",
-            'homedepot': "",
+            'homedepot': " ",
             'bestbuy': "www.bestbuy.com/site/razer-iskur-gaming-chair-with-built-in-lumbar-support-black/6476898.p?skuId=6476898",
             'ebay': "https://www.ebay.com/itm/Steelcase-Leap-V2-Chair-Open-Box-Fully-Loaded-Black-Fabric-/121882349228"
             }
@@ -54,7 +54,7 @@ class TestMain(unittest.TestCase):
             'walmart': 48.0,
             'target': 11.0,
             'costco': 229.0,
-            'homedepot': inf or 0,
+            'homedepot': inf,
             'bestbuy': 349.0,
             'ebay': 329.0}
 
@@ -63,7 +63,7 @@ class TestMain(unittest.TestCase):
             'walmart': "www.walmart.comhttps://wrd.walmart.com/track?pltfm=desktop&tax=4044_103150_97116_91853&rdf=1&plmt=sp-search-middle~desktop~&eventST=click&spQs=apqgqDEG00Gk_QH7Y98s-tvzD2GJBtYRHuyrCs-NV8UWvHysqbYcLsclYVXrTItsxT99dj59OB3kUD_JhC3RyHy-pCq4J6WjLiQcT_qrqQA&pos=1&pgId=chair&bt=1&adUid=ZavTQ7x_M1eGlAtdVKJy6__X2-ZoZz6XZJJn&storeId=1372&mloc=sp-search-middle&pt=search&rd=https%3A%2F%2Fwww.walmart.com%2Fip%2FBig-Joe-Milano-Bean-Bag-Chair-Blue%2F51744431%3Fathbdg%3DL1800",
             'target': "https://www.target.com/p/steel-folding-chair-black-pdg/-/A-14777780",
             'costco': "https://www.costco.com/respawn-gaming-chair.product.100388800.html",
-            'homedepot': "",
+            'homedepot': " ",
             'bestbuy': "www.bestbuy.com/site/razer-iskur-gaming-chair-with-built-in-lumbar-support-black/6476898.p?skuId=6476898",
             'ebay': "https://www.ebay.com/itm/Steelcase-Leap-V2-Chair-Open-Box-Fully-Loaded-Black-Fabric-/121882349228"}
 
