@@ -74,7 +74,7 @@ Future possibilities encompass the development of web applications with intuitiv
 ---
 
 ## :movie_camera: Checkout our video
-https://www.youtube.com/watch?v=CKobC_gyfBg
+<iframe width="560" height="315" src="https://www.youtube.com/embed/https://www.youtube.com/watch?v=CKobC_gyfBg" frameborder="0" allowfullscreen></iframe>
 
 
 
