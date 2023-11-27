@@ -35,7 +35,7 @@ def test_formatResults():
     links = []
     images = []
 
-    product = formatter.formatResult("example", titles, prices, links, images,rating=3.3)
+    product = formatter.formatResult("example", titles, prices, links, images,ratings=3.3)
     ans = {"title":"title", "price":"$0.99", "website":"example","rating":3.3}
 
     assert product["title"] == ans["title"] and product["price"] == ans["price"] and product["website"] == ans["website"] and product["rating"] == ans["rating"]
