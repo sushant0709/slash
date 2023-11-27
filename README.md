@@ -26,23 +26,23 @@ Slash, the openly accessible web API framework, empowers you to scour the top e-
 ## :rocket: What's new? 
 We have added a lot of new features to slash in our Phase-II.
 
-1. A web interface for users to interact with the application in a more personalised way.
-2. Substituted web scraping with website product APIs for enhanced efficiency and speed.
-3. Added a new e-commerce website [Home Depot](https://www.homedepot.com/)
-4. Added the reviews section where users can see review of the product on respective e-commerce website.
+1. A modified and beautiful web interface for users to interact with the application in a more personalised way.
+2. Mobile application for users to use the application on their mobile devices.
+3. Hosted the webpage publicly so everyone can access the application
+4. Created a Google authentication for logging in the application, making it easier and smoother to login to the application.
 
 ## :page_facing_up: Why
 
-1. **Anti-Web Scraping Measures**
-   - **Challenge**: Many popular websites, including Amazon and Walmart, employ anti-web scraping mechanisms, making it difficult to extract data using conventional scraping methods.
+1. **Mobile Application**
+   -  Many popular websites, including Amazon and Walmart have their own mobile application which makes it easy for users to access the application from anywhere and increases accessibility.
 
-2. **Transition to APIs**
-   - **Solution**: To overcome this challenge, we've transitioned from traditional web scraping in the backend to leveraging official APIs provided by these websites. This strategic shift not only preserves the project's core functionality but also enhances its robustness.
+2. **Publicly hosted webpage**
+   - For every user in the world to access and use this application, we have hosted this web application publicly which can be accessed using an URL. This helps the application to reach all the users via the Internet and thus many users will be able to use this application.
 
-3. **Enhanced Data Reliability**
-   - **Benefit**: APIs deliver data in a structured and reliable format, reducing the risk of unexpected data disruptions. In contrast, web scraping is vulnerable to frequent changes in website structure, which can break scraping scripts. This transition ensures more dependable and consistent data access.
+3. **Google Authentication**
+   - **Benefit**: Google Authentication delivers a safe and trusted way to login to the application. Since almost every user now has a google account, they can login to the application via Google Authentication and Google authentication being secure gives an added advantage over any other authentication methods.
 
-These changes have significantly improved the reliability and sustainability of data retrieval in our project.
+These changes have significantly improved the reliability and accessibility of this application.
 
 Future possibilities encompass the development of web applications with intuitive interfaces and mobile applications for Android and iOS, all powered by these web APIs. Anyone can construct their custom applications atop this foundation of web APIs.".
 
@@ -82,7 +82,6 @@ Also, you can watch the video demo of the Slash project with audio explanation h
 1. [Visual Studio Code](https://code.visualstudio.com/download)
 2. [Python 3.7 and above](https://www.python.org/downloads/)
 3. [Node.js](https://nodejs.dev/en/download/) and NPM
-4. [MySQL Workbench](https://dev.mysql.com/downloads/mysql/)
 
 ## :rocket: Installation
 
@@ -108,26 +107,6 @@ cd client
 npm install --legacy-peer-deps
 ```
 
-For the login page setup, to install all the requirements which are listed in 'LoginPage/package.json' file. Use npm to install all of those.
-
-```
-cd LoginPage
-npm install express
-npm install mysql
-npm install cors
-npm install nodemon
-```
-
-For MySQL Workbench setup, 
-Importing db schema
-   <p align="center"><img width="500" src="./assets/SQL_Dump.png"></p>
-Changing db credentials from services.js
-   <p align="center"><img width="500" src="./assets/dbChange.png"></p>
-
-Facing Issues?
-Refer to the this [Stack Overflow](https://stackoverflow.com/questions/50093144/mysql-8-0-client-does-not-support-authentication-protocol-requested-by-server) Link resolution
-   
-
 
 3. Once all the requirements are installed, you will have to `cd` into the `src` folder. Once in the `src` folder, use the python command to run the `main.py` file.
 
@@ -141,13 +120,13 @@ For Windows
 python main.py
 ```
 
-4. Once the backend is up and running, you will have to `cd` into the `LoginPage` folder. Once in the `LoginPage` folder, use the node command to start the webserver.
+4. Once the backend is up and running, you will have to `cd` into the `GoogleauthLogin` folder. Once in the `GoogleauthLogin` folder, cd to 'client' folder. Use the node command to run the build and then start the webserver.
 
 ```
-cd LoginPage
-nodemon services.js
+npm run build
 
-Open Login.html in the web browser
+npm run start
+
 ```
 
 
@@ -155,6 +134,7 @@ Open Login.html in the web browser
 
 - FastAPI : https://fastapi.tiangolo.com
 - ASGI Server - Uvicorn : https://www.uvicorn.org
+- Flutter : https://flutter.dev/
 
 
 ## :bulb: Use Case
@@ -182,21 +162,19 @@ Please refer to these API documentation links for details on how to use them in 
 
 ## :golf: Future Roadmap
 
-- Host website on a public server so customers can use it
-- Add login feature to store user history to provide features like bookmarking, price drop alerts and many more.
+- Add more websites to the application and ensure smooth integration with the newly added websites.
+- Make user profiles to store user history to provide features like bookmarking, price drop alerts and many more.
 - Our API can be used by end users such as developers who are tech-savvy individuals looking to get a one stop solution for web scraping ecommerce websites such as Amazon, Target, Ebay,etc along with API access to multiple ecommerce websites. It'll be available directly for access to people without having to dive deep into the code.
-- Chrome Extension using the functionalities of Slash API
-- An iOS or Android application.
+- In the future, there can be a functionality added which will support in-app or on the website purchases.
 
 # Team Members
 
 ## Phase 2 Team Members
 
-- [Chaitanya Srusti](https://github.com/ChaitanyaS182k)
-- [Nisarg Doshi](https://github.com/Nisarg20)
-- [Aniruddha Rajnekar](https://github.com/Aniruddha-Rajnekar)
-- [Mitesh Agarwal](https://github.com/mitesh24100)
+- Anshul Anil Khairnar
+- Sushant Khattar
+- Parth Kulkarni
 
 ## :email: Support
 
-For any queries and help, please reach out to us at: slashncsu70@gmail.com
+For any queries and help, please reach out to us at: anshul5khairnar@gmail.com
