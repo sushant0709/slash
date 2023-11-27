@@ -34,7 +34,7 @@ class TestMain(unittest.TestCase):
             'walmart': 48.0,
             'target': 11.0,
             'costco': 229.0,
-            'homedepot': 0,
+            'homedepot': inf,
             'bestbuy': 349.0,
             'ebay': 329.0
         }
@@ -54,7 +54,7 @@ class TestMain(unittest.TestCase):
             'walmart': 48.0,
             'target': 11.0,
             'costco': 229.0,
-            'homedepot': 0,
+            'homedepot': inf,
             'bestbuy': 349.0,
             'ebay': 329.0}
 
