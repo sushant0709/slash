@@ -1,10 +1,8 @@
-# slash_app
+# Slash App
 
-A new Flutter project.
+This app is an extension to the preexisting website which now makes it possible to search products on your mobile phone. This has been done by using Flutter for the app development. As Flutter is multi-platform you can build apps for mobile, web, desktop, and embedded devices — all from a single codebase.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
 
