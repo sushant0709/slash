@@ -1,13 +1,13 @@
 Features added in Project 3: Mobile application developed using Flutter. Further we hosted the application publicly. Implemented Google Authentication for added security. Improved Frontend of the application.
 
-Video:
+Video: https://www.youtube.com/watch?v=CKobC_gyfBg
 
 
 [Slash](https://github.com/sushant0709/slash) Rubric (Score: 79)**
 ----------------------------
 |Notes                                                                                                                                                                                                          |Scores (0-3)|Evidence                                                                 |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|-------------------------------------------------------------------------|
-|Video                                                                                                                                                                                                          |3           |          youtube video                   |
+|Video                                                                                                                                                                                                          |3           | https://www.youtube.com/watch?v=CKobC_gyfBg                 |
 |Workload is spread over the whole team                                                                                                                                                                         |3           |https://github.com/sushant0709/slash/graphs/contributors              |
 |Number of commits                                                                                                                                                                                              |3           |https://github.com/sushant0709/slash/commits/main                  |
 |Number of commits: by different people                                                                                                                                                                         |3           |https://github.com/sushant0709/slash/commits/main                 |
