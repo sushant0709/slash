@@ -78,6 +78,9 @@ Future possibilities encompass the development of web applications with intuitiv
 
 https://github.com/sushant0709/slash/assets/91055071/b710be10-4ac2-4dd6-b167-dc0241bb7f11
 
+Youtube link:-
+https://www.youtube.com/watch?v=CKobC_gyfBg
+
 
 
 
