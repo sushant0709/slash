@@ -48,8 +48,6 @@ We have added a lot of new features to slash in our Phase-II.
 
 These changes have significantly improved the reliability and accessibility of this application.
 
-Future possibilities encompass the development of web applications with intuitive interfaces and mobile applications for Android and iOS, all powered by these web APIs. Anyone can construct their custom applications atop this foundation of web APIs.".
-
 ---
 
 <p align="center">
